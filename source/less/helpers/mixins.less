@@ -1,0 +1,32 @@
+@fontRegular: "oswald";
+@fontSecondary: "lato";
+
+
+.font(@fontName; @urlName: @fontName; @weight: normal; @style: normal) {
+  font-family: "@{fontName}";
+  src: url("../fonts/@{urlName}/@{urlName}.woff") format("woff"),
+    url("../fonts/@{urlName}/@{urlName}.woff2") format("woff2");
+  font-weight: @weight;
+  font-style: @style;
+}
+
+@font-face {
+  .font(@fontRegular);
+}
+
+@font-face {
+  .font(@fontSecondary);
+}
+
+.main-navigation__toggle:checked ~ .site-navigation {
+  .visually-hidden();
+}
+
+.site-navigation__item {
+  padding: 22px 0 24px 0;
+  border-bottom: 1px solid #e6e6e6;
+
+  &:first-child {
+    border-top: 1px solid #e6e6e6;
+  }
+}

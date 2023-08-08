@@ -2,15 +2,15 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width; initial-scale=1">
-    <link rel="stylesheet" href="/source/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
-    <header class="main-header">
+    <header class="page__main-header main-header">
       <a class="main-header__logo-mobile logo-mobile">
         <svg class="logo-mobile__img" width="33" height="38" viewBox="0 0 33 38" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_153_267)">
@@ -52,12 +52,11 @@
           </defs>
         </svg>
       </a>
-      <nav class="main-header__main-navigation main-navigation ">
-        <button class="main-navigation__toggle">
-          <span class="visually-hidden">Открыть меню</span>
-          <img src="/source/img/logo-burger.svg" alt="logo-burger">
-        </button>
-          <ul class="main-navigation__site-navigation site-navigation visually-hidden"> <!--Добавим класс-центровщик дополнительно позже wrapper-->
+      <nav class="main-header__main-navigation main-navigation">
+          <input id="main-navigation__toggle" class="main-navigation__toggle" type="checkbox"/>
+          <label for="main-navigation__toggle"><span class="visually-hidden">Открыть меню</span>
+          <img src="img/logo-burger.svg" alt="logo-burger"></label>
+          <ul class="main-navigation__site-navigation site-navigation">
             <li class="site-navigation__item">
               <a class="site-navigation__link" href="#">Главная</a>
             </li>
@@ -78,10 +77,10 @@
             <div class="banner__content offer">
               <h2 class="offer__title">Функциональное питание для котов</h2>
               <p class="offer__slogan">Занялся собой? Займись котом!</p>
-              <img class="offer__img" src="/source/img/promo-can-mobile.png" width="280" height="270" alt="offer-can">
+              <img class="offer__img" src="img/promo-can-mobile.png" width="280" height="270" alt="offer-can">
               <a class="offer__button button">подобрать программу</a>
             </div>
-            <img class="banner__main-cover" src="/source/img/banner-mobile.png" width="320" height="302" alt="background-image">
+            <img class="banner__main-cover" src="img/banner-mobile.png" width="320" height="302" alt="background-image">
           </div>
         </div>
       </section>
@@ -91,12 +90,12 @@
           <ul class="catalogs__list">
             <li class="catalogs__item">
               <h3 class="catalogs__title catalogs__title--slim ">похудение</h3>
-              <p class="catalogs__description line-bottom">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              <p class="catalogs__description catalogs__description--line-bottom">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
               <a class="catalogs__link" href="#">каталог slim</a>
             </li>
             <li class="catalogs__item">
               <h3 class="catalogs__title catalogs__title--pro">набор массы</h3>
-              <p class="catalogs__description line-bottom">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+              <p class="catalogs__description catalogs__description--line-bottom">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
               <a class="catalogs__link" href="#">каталог pro</a>
             </li>
           </ul>
@@ -170,10 +169,10 @@
             <div class="slider__wrapper">
               <div class="slider__items">
                 <div class="slider__item">
-                  <img class="example__img" src="/source/img/boris-after.png" width="280" height="256" alt="Кот До">
+                  <img class="example__img" src="img/boris-after.png" width="280" height="256" alt="Кот До">
                 </div>
                 <div class="slider__item">
-                  <img class="example__img" src="/source/img/boris-before.png" width="280" height="256" alt="Кот После">
+                  <img class="example__img" src="img/boris-before.png" width="280" height="256" alt="Кот После">
                 </div>
               </div>
             </div>
@@ -183,15 +182,15 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__contacts contacts">
+      <div class="main-footer__contacts contacts main-footer__contacts--light">
         <b class="contacts__title">приглашаем к сотрудничеству дилеров!</b>
         <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       <div class="main-footer__locations">
-        <img src="/source/img/map.png" height="360" width="320" alt="Карта">
+        <img src="img/map.png" height="360" width="320" alt="Карта">
       </div>
       <div class="main-footer__logo-mobile-descriptor">
-        <a class="logo-mobile-descriptor line-bottom">
+        <a class="logo-mobile-descriptor logo-mobile-descriptor--line-bottom">
           <svg class="logo-mobile-descriptor__img" width="101" height="18" viewBox="0 0 101 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_135_3354)">
             <path d="M1.26449 16.5385C0.36955 15.2762 -0.0747041 13.7627 1.02073e-05 12.2308V5.84615C-0.108365 4.29774 0.308071 2.75746 1.18546 1.46154C2.05478 0.461538 3.39829 0 5.37403 0C7.34978 0 8.61425 0.461538 9.40455 1.30769C10.2626 2.37941 10.6846 3.72136 10.59 5.07692V6.61539H6.71754V4.84615C6.74881 4.32289 6.66808 3.799 6.48045 3.30769C6.38016 3.10938 6.2212 2.9448 6.02403 2.83513C5.82686 2.72547 5.60049 2.67572 5.37403 2.69231C4.82082 2.69231 4.42568 2.84615 4.26762 3.23077C4.08883 3.77733 4.00862 4.34988 4.03053 4.92308V13.1538C3.98879 13.71 4.0978 14.267 4.34665 14.7692C4.5047 15.1538 4.89985 15.3077 5.45306 15.3077C6.00627 15.3077 6.32239 15.1538 6.48045 14.7692C6.66013 14.2494 6.74049 13.7019 6.71754 13.1538V11.3077H10.59V12.8462C10.6704 14.2238 10.2508 15.5852 9.40455 16.6923C8.61425 17.6154 7.27075 18.0769 5.37403 18.0769C3.47732 18 2.05478 17.5385 1.26449 16.5385Z" fill="#111111"/>
@@ -213,7 +212,7 @@
         </a>
       </div>
       <div class="main-footer__socials">
-        <ul class="socials line-bottom">
+        <ul class="socials socials--line-bottom">
           <li class="socials__item">
             <a class="socials__link" href="#">
               <svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">

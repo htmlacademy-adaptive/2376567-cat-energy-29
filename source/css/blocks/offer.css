@@ -3,7 +3,6 @@
   color: #ffffff;
   padding: 27px 20px 0;
 }
-
 .offer__title {
   margin: 0;
   margin-bottom: 25px;
@@ -13,19 +12,14 @@
   font-weight: 400;
   line-height: 36px;
 }
-
 .offer__slogan {
   margin: 0;
   padding: 0;
   margin-bottom: 29px;
-  color: #ffffff;
+  color: #FFF;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 14px;
   text-transform: uppercase;
 }
-
-// .offer__button {
-
-// }
