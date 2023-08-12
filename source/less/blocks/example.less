@@ -1,9 +1,10 @@
 .example {
-  padding: 25px 20px 40px 20px;
+  padding: 25px 0 40px 0;
   background-color: #eaeaea;
 }
 
 .example__title {
+  .clear-title();
   color: #000000;
   text-align: left;
   font-family: @fontRegular;
@@ -15,6 +16,8 @@
 }
 
 .example__description {
+  margin: 0;
+  padding: 0;
   color: #444444;
   font-family: @fontSecondary;
   font-size: 14px;

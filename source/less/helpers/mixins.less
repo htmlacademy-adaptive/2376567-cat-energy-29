@@ -1,32 +1,23 @@
-@fontRegular: "oswald";
-@fontSecondary: "lato";
+// .main-navigation__toggle:checked ~ .site-navigation {
+//   .visually-hidden();
+// }
 
-
-.font(@fontName; @urlName: @fontName; @weight: normal; @style: normal) {
-  font-family: "@{fontName}";
-  src: url("../fonts/@{urlName}/@{urlName}.woff") format("woff"),
-    url("../fonts/@{urlName}/@{urlName}.woff2") format("woff2");
-  font-weight: @weight;
-  font-style: @style;
+.fontRegular(@fontRegular) {
+  font-family: @fontRegular, "Arial", "Helvetica", sans-serif;
 }
 
-@font-face {
-  .font(@fontRegular);
+.fontSecondary(@fontSecondary) {
+  font-family: @fontSecondary, "Arial", "Helvetica", sans-serif;
 }
 
-@font-face {
-  .font(@fontSecondary);
+.clear-list() {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
-.main-navigation__toggle:checked ~ .site-navigation {
-  .visually-hidden();
-}
-
-.site-navigation__item {
-  padding: 22px 0 24px 0;
-  border-bottom: 1px solid #e6e6e6;
-
-  &:first-child {
-    border-top: 1px solid #e6e6e6;
-  }
+.clear-title() {
+  margin: 0;
+  padding: 0;
 }
