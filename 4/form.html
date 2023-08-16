@@ -75,52 +75,56 @@
       <h1 class="form-main-container__main-title main-title">Подбор программы</h1>
       <p class="form-main-container__instruction">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="form-main-container__select-form select-form" action="#" method="POST">
-        <fieldset class="select-form__section">
-          <legend class="select-form__title visually-hidden"><span>данные кота</span></legend>
-          <label class="select-form__field">
-            <span class="select-form__field-label">имя:*</span>
-            <input class="select-form__field-value" type="text" name="cat-name" id="cat-name" placeholder="Барсик">
-          </label>
-          <label class="select-form__field">
-            <span class="select-form__field-label">вес (кг):*</span>
-            <input class="select-form__field-value" type="text" name="cat-weight" id="cat-weight" placeholder="7">
-          </label>
-          <label class="select-form__field">
-            <span class="select-form__field-label">возраст (лет):</span>
-            <input class="select-form__field-value" type="text" name="cat-age" id="cat-age" placeholder="7">
-          </label>
-        </fieldset>
-        <fieldset class="select-form__section">
-          <legend class="select-form__title visually-hidden"><span>программа</span></legend>
-          <div class="select-form__radio-group radio-group">
-            <label class="radio-group__radiobutton radiobutton">
-              <input class="visually-hidden" type="radio" name="program" value="to-slim" checked>
-              <span class="radiobutton__label">похудение</span>
+        <div class="select-form__program-wrapper">
+          <fieldset class="select-form__section">
+            <legend class="select-form__title visually-hidden"><span>данные кота</span></legend>
+            <label class="select-form__field">
+              <span class="select-form__field-label">имя:*</span>
+              <input class="select-form__field-value" type="text" name="cat-name" id="cat-name" placeholder="Барсик">
             </label>
-            <label class="radio-group__radiobutton radiobutton">
-              <input class="visually-hidden" type="radio" name="program" value="to-weight">
-              <span class="radiobutton__label">набор массы</span>
+            <label class="select-form__field">
+              <span class="select-form__field-label">вес (кг):*</span>
+              <input class="select-form__field-value" type="text" name="cat-weight" id="cat-weight" placeholder="7">
             </label>
-            <label class="radio-group__radiobutton radiobutton">
-              <input class="visually-hidden" type="radio" name="program" value="any">
-              <span class="radiobutton__label">не знаю (нужен ваш совет)</span>
+            <label class="select-form__field">
+              <span class="select-form__field-label">возраст (лет):</span>
+              <input class="select-form__field-value" type="text" name="cat-age" id="cat-age" placeholder="7">
             </label>
+          </fieldset>
+          <fieldset class="select-form__section">
+            <legend class="select-form__title visually-hidden"><span>программа</span></legend>
+            <div class="select-form__radio-group radio-group">
+              <label class="radio-group__radiobutton radiobutton">
+                <input class="visually-hidden" type="radio" name="program" value="to-slim" checked>
+                <span class="radiobutton__label">похудение</span>
+              </label>
+              <label class="radio-group__radiobutton radiobutton">
+                <input class="visually-hidden" type="radio" name="program" value="to-weight">
+                <span class="radiobutton__label">набор массы</span>
+              </label>
+              <label class="radio-group__radiobutton radiobutton">
+                <input class="visually-hidden" type="radio" name="program" value="any">
+                <span class="radiobutton__label">не знаю (нужен ваш совет)</span>
+              </label>
+            </div>
+            </fieldset>
           </div>
-        </fieldset>
-        <fieldset class="select-form__section">
-          <legend class="select-form__title visually-hidden">контактные данные (владельца кота)</legend>
-          <span class="select-form__title">Контактные данные (владельца кота)</span>
-          <label class="select-form__field">
-            <span class="select-form__field-label">E-mail:*</span>
-            <input class="select-form__field-value" type="email" name="owner-email" id="owner-email" placeholder="kuklachev@gmail.com">
-             <!-- значок в поле формы -->
-          </label>
-          <label class="select-form__field">
-            <span class="select-form__field-label">телефон:*</span>
-            <input class="select-form__field-value" type="tel" name="owner-tel" id="owner-tel" placeholder="8 (960) 900-60-90">
-            <!-- значок в поле формы -->
-          </label>
-        </fieldset>
+            <fieldset class="select-form__section">
+              <legend class="select-form__title visually-hidden">контактные данные (владельца кота)</legend>
+              <span class="select-form__title">Контактные данные (владельца кота)</span>
+              <div class="select-form__contact-wrapper">
+                <label class="select-form__field">
+                  <span class="select-form__field-label">E-mail:*</span>
+                  <input class="select-form__field-value" type="email" name="owner-email" id="owner-email" placeholder="kuklachev@gmail.com">
+                   <!-- значок в поле формы -->
+                </label>
+                <label class="select-form__field">
+                  <span class="select-form__field-label">телефон:*</span>
+                  <input class="select-form__field-value" type="tel" name="owner-tel" id="owner-tel" placeholder="8 (960) 900-60-90">
+                  <!-- значок в поле формы -->
+                </label>
+              </div>
+            </fieldset>
         <fieldset class="select-form__section">
           <legend class="select-form__title visually-hidden"><span>комментарий</span></legend>
           <span class="select-form__title">Комментарий</span>
@@ -148,9 +152,11 @@
               <span class="checkbox__label">витамины</span>
             </label>
           </div>
-          <button class="select-form__button button" type="submit">отправить заявку</button>
+          <div class="select-form__button-wrapper">
+            <button class="select-form__button button" type="submit">отправить заявку</button>
+            <small class="select-form__note-text">* — Обязательные поля</small>
+          </div>
         </fieldset>
-        <small class="form-main-container__note-text">* — Обязательные поля</small>
       </form>
     </main>
     <footer class="main-footer">

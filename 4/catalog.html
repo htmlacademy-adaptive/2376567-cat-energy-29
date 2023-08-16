@@ -71,7 +71,7 @@
         </ul>
       </nav>
     </header>
-    <main class="catalog-main-container container">
+    <main class="page__catalog-main-container catalog-main-container container">
       <h1 class="catalog-main-container__main-title catalog-main-container__main-title--line-bottom main-title">Каталог продукции</h1>
       <section class="catalog-main-container__regular-catalog regular-catalog ">
         <h2 class="regular-catalog__title visually-hidden"><span class="visually-hidden">Каталог основной продукции</span></h2>
@@ -142,7 +142,6 @@
                   <dd class="product-preview__param-value">700 ₽</dd>
                 </div>
               </dl>
-
             </div>
             <button class="product-preview__button button" type="button">заказать</button>
           </li>
@@ -166,7 +165,6 @@
                   <dd class="product-preview__param-value">700 ₽</dd>
                 </div>
               </dl>
-
             </div>
             <button class="product-preview__button button" type="button">заказать</button>
           </li>
@@ -190,7 +188,6 @@
                   <dd class="product-preview__param-value">700 ₽</dd>
                 </div>
               </dl>
-
             </div>
             <button class="product-preview__button button" type="button">заказать</button>
           </li>
@@ -214,7 +211,6 @@
                   <dd class="product-preview__param-value">700 ₽</dd>
                 </div>
               </dl>
-
             </div>
             <button class="product-preview__button button" type="button">заказать</button>
           </li>
@@ -238,89 +234,92 @@
                   <dd class="product-preview__param-value">700 ₽</dd>
                 </div>
               </dl>
-
             </div>
             <button class="product-preview__button button" type="button">заказать</button>
+          </li>
+          <li class="catalog-list__item">
+            <div class="catalog-list__pagination pagination">
+              <svg class="pagination__img" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="15" x2="15" y2="30" stroke="#D3D3D3" stroke-width="2"/>
+                <line x1="30" y1="15" y2="15" stroke="#D3D3D3" stroke-width="2"/>
+              </svg>
+              <a class="pagination__link" href="#">
+                <span class="pagination__link-description">Показать еще 100500 товаров</span>
+              </a>
+              <p class="pagination__promo-caption">На самом деле вкусов гораздо больше!</p>
+              <button class="pagination__button button button--secondary" type="button">показать все</button>
+            </div>
           </li>
         </ul>
-        <div class="regular-catalog__pagination pagination">
-          <svg class="pagination__img" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <line x1="15" x2="15" y2="30" stroke="#D3D3D3" stroke-width="2"/>
-            <line x1="30" y1="15" y2="15" stroke="#D3D3D3" stroke-width="2"/>
-          </svg>
-          <a class="pagination__link" href="#">
-            <span class="pagination__link-description">Показать еще 100500 товаров</span>
-          </a>
-          <p class="pagination__promo-caption">На самом деле вкусов гораздо больше!</p>
-          <button class="pagination__button button button--secondary" type="button">показать все</button>
-        </div>
       </section>
-      <section class="additional-catalog">
-        <h2 class="additional-catalog__title additional-catalog__title--line-bottom">Дополнительные товары</h2>
-        <ul class="additional-catalog__catalog-list catalog-list">
-          <li class="catalog-list__item">
-            <div class="additional-product-preview">
-              <h3 class="additional-product-preview__title">
-                <a class="additional-product-preview__link" href="card.html">Сахарозаменитель</a>
-              </h3>
-              <dl class="additional-product-preview__params">
-                <div class="additional-product-preview__param">
-                  <dt class="additional-product-preview__param-capacity">1 упаковка (100 г)</dt>
-                  <dd class="additional-product-preview__param-cost">200 ₽</dd>
-                </div>
-              </dl>
-              <button class="additional-product-preview__button button" type="button">заказать</button>
-            </div>
-          </li>
-        </ul>
-        <ul class="additional-catalog__catalog-list catalog-list">
-          <li class="catalog-list__item">
-            <div class="additional-product-preview">
-              <h3 class="additional-product-preview__title">
-                <a class="additional-product-preview__link" href="card.html">Сахарозаменитель</a>
-              </h3>
-              <dl class="additional-product-preview__params">
-                <div class="additional-product-preview__param">
-                  <dt class="additional-product-preview__param-capacity">1 упаковка (100 г)</dt>
-                  <dd class="additional-product-preview__param-cost">200 ₽</dd>
-                </div>
-              </dl>
-              <button class="additional-product-preview__button button" type="button">заказать</button>
-            </div>
-          </li>
-        </ul>
-        <ul class="additional-catalog__catalog-list catalog-list">
-          <li class="catalog-list__item">
-            <div class="additional-product-preview">
-              <h3 class="additional-product-preview__title">
-                <a class="additional-product-preview__link" href="card.html">Сахарозаменитель</a>
-              </h3>
-              <dl class="additional-product-preview__params">
-                <div class="additional-product-preview__param">
-                  <dt class="additional-product-preview__param-capacity">1 упаковка (100 г)</dt>
-                  <dd class="additional-product-preview__param-cost">200 ₽</dd>
-                </div>
-              </dl>
-              <button class="additional-product-preview__button button" type="button">заказать</button>
-            </div>
-          </li>
-        </ul>
-        <ul class="additional-catalog__catalog-list additional-catalog__catalog-list--last-item catalog-list">
-          <li class="catalog-list__item">
-            <div class="additional-product-preview">
-              <h3 class="additional-product-preview__title">
-                <a class="additional-product-preview__link" href="card.html">Сахарозаменитель</a>
-              </h3>
-              <dl class="additional-product-preview__params">
-                <div class="additional-product-preview__param">
-                  <dt class="additional-product-preview__param-capacity">1 упаковка (100 г)</dt>
-                  <dd class="additional-product-preview__param-cost">200 ₽</dd>
-                </div>
-              </dl>
-              <button class="additional-product-preview__button button" type="button">заказать</button>
-            </div>
-          </li>
-        </ul>
+      <section class="catalog-main-container__additional-catalog additional-catalog">
+        <div class="additional-catalog__wrapper">
+          <h2 class="additional-catalog__title additional-catalog__title--line-bottom">Дополнительные товары</h2>
+          <ul class="additional-catalog__catalog-list catalog-list">
+            <li class="catalog-list__item">
+              <div class="catalog-list__additional-product-preview additional-product-preview">
+                <h3 class="additional-product-preview__title">
+                  <a class="additional-product-preview__link" href="card.html">Сахарозаменитель</a>
+                </h3>
+                <dl class="additional-product-preview__params">
+                  <div class="additional-product-preview__param">
+                    <dt class="additional-product-preview__param-capacity">1 упаковка (100 г)</dt>
+                    <dd class="additional-product-preview__param-cost">200 ₽</dd>
+                  </div>
+                </dl>
+                <button class="additional-product-preview__button button" type="button">заказать</button>
+              </div>
+            </li>
+          </ul>
+          <ul class="additional-catalog__catalog-list catalog-list">
+            <li class="catalog-list__item">
+              <div class="catalog-list__additional-product-preview additional-product-preview">
+                <h3 class="additional-product-preview__title">
+                  <a class="additional-product-preview__link" href="card.html">Сахарозаменитель</a>
+                </h3>
+                <dl class="additional-product-preview__params">
+                  <div class="additional-product-preview__param">
+                    <dt class="additional-product-preview__param-capacity">1 упаковка (100 г)</dt>
+                    <dd class="additional-product-preview__param-cost">200 ₽</dd>
+                  </div>
+                </dl>
+                <button class="additional-product-preview__button button" type="button">заказать</button>
+              </div>
+            </li>
+          </ul>
+          <ul class="additional-catalog__catalog-list catalog-list">
+            <li class="catalog-list__item">
+              <div class="catalog-list__additional-product-preview additional-product-preview">
+                <h3 class="additional-product-preview__title">
+                  <a class="additional-product-preview__link" href="card.html">Сахарозаменитель</a>
+                </h3>
+                <dl class="additional-product-preview__params">
+                  <div class="additional-product-preview__param">
+                    <dt class="additional-product-preview__param-capacity">1 упаковка (100 г)</dt>
+                    <dd class="additional-product-preview__param-cost">200 ₽</dd>
+                  </div>
+                </dl>
+                <button class="additional-product-preview__button button" type="button">заказать</button>
+              </div>
+            </li>
+          </ul>
+          <ul class="additional-catalog__catalog-list additional-catalog__catalog-list--last-item catalog-list">
+            <li class="catalog-list__item">
+              <div class="catalog-list__additional-product-preview additional-product-preview">
+                <h3 class="additional-product-preview__title">
+                  <a class="additional-product-preview__link" href="card.html">Сахарозаменитель</a>
+                </h3>
+                <dl class="additional-product-preview__params">
+                  <div class="additional-product-preview__param">
+                    <dt class="additional-product-preview__param-capacity">1 упаковка (100 г)</dt>
+                    <dd class="additional-product-preview__param-cost">200 ₽</dd>
+                  </div>
+                </dl>
+                <button class="additional-product-preview__button button" type="button">заказать</button>
+              </div>
+            </li>
+          </ul>
+        </div>
         <div class="gift-block">
           <div class="gift-block__banner banner">
               <div class="banner__gift gift">
@@ -333,7 +332,7 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__contacts contacts main-footer__contacts--light">
+      <div class="main-footer__contacts contacts">
         <div class="contacts__container container">
           <b class="contacts__title">приглашаем к сотрудничеству дилеров!</b>
           <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
