@@ -28,3 +28,38 @@
 .contacts__container {
   display: flex;
 }
+
+@media (min-width: @tablet-width) {
+  .contacts__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts__title {
+    .clear-title();
+    display: block;
+    max-width: 170px;
+  }
+
+  .contacts__text {
+    display: block;
+    max-width: 170px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__container {
+    display: flex;
+    box-sizing: border-box;
+    width: 570px;
+    height: 201px;
+    background-color: #ffffff;
+    justify-content: space-between;
+    padding: 65px 73px 50px 77px;
+    z-index: 1;
+    position: relative;
+    max-width: 1220px;
+  }
+
+
+}

@@ -1,5 +1,6 @@
 .main-footer {
   background-color: #f2f2f2;
+  position: relative;
 }
 
 // .main-footer__contacts {
@@ -28,4 +29,30 @@
 
 .main-footer__copyright {
   padding: 0 0 40px 0;
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer__logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo-descriptor {
+    border: none;
+  }
+
+  .socials--line-bottom {
+    border: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-footer__locations {
+    // position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 }
