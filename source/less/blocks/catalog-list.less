@@ -1,9 +1,38 @@
 .catalog-list {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
+  list-style: none;
+  text-decoration: none;
+  padding: 0 20px 0 20px;
+}
+
+
+.catalog-list__item {
+  border-bottom: 1px solid #ebebeb;
+  padding: 20px;
+  margin: 0 -20px 0 -20px;
 }
 
 .catalog-list__product-preview {
   margin-bottom: 17px;
+  // padding: 0 20px 0 20px;
+}
+
+.catalog-list__pagination {
+  // padding: 25px 20px 25px 20px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.catalog-list__additional-product-preview {
+
+}
+
+@media (min-width: @tablet-width) {
+
+
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-list__additional-product-preview {
+    display: flex;
+    justify-content: space-between;
+  }
 }

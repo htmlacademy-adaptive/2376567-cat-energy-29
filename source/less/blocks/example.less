@@ -1,9 +1,10 @@
 .example {
-  padding: 25px 20px 40px 20px;
+  padding: 25px 0 40px 0;
   background-color: #eaeaea;
 }
 
 .example__title {
+  .clear-title();
   color: #000000;
   text-align: left;
   font-family: @fontRegular;
@@ -15,6 +16,8 @@
 }
 
 .example__description {
+  margin: 0;
+  padding: 0;
   color: #444444;
   font-family: @fontSecondary;
   font-size: 14px;
@@ -24,6 +27,58 @@
   margin-bottom: 20px;
 }
 
+@media (min-width: @tablet-width) {
+  .example__indicators {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example__container {
+    display: grid;
+    grid-template-areas:
+      "title img"
+      "description img"
+      "indicators img";
+  }
+
+  .example__title {
+    grid-area: title;
+  }
+  .example__description {
+    grid-area: description;
+  }
+  .example__indicators {
+    grid-area: indicators;
+  }
+  // .indicators__list {
+  // }
+  // .indicators__item {
+  // }
+  // .indicators__value {
+  // }
+  // .indicators__descriptor {
+  // }
+  // .indicators__caption {
+  // }
+  .example__slider {
+    grid-area: img;
+  }
+  //   .slider__wrapper {
+  //   }
+  //   .slider__items {
+  //   }
+  //   .slider__item {
+  //   }
+  //   .example__img {
+  //   }
+  //   .slider__control {
+  //   }
+  //   .slider__control_drag {
+  //
+}
 // .example__indicators {
 
 

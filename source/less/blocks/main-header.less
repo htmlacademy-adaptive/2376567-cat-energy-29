@@ -7,3 +7,39 @@
   height: 65px;
   padding: 13px 20px;
 }
+
+.main-header--line-bottom {
+  border-bottom: 1px solid #ebebeb;
+}
+
+.main-header__logo {
+  @media (min-width: @tablet-width) {
+    // .visually-hidden();
+  }
+
+  @media (min-width: @desktop-width) {
+    // .visually-hidden();
+  }
+}
+
+.main-header__logo-descriptor {
+  @media (min-width: @tablet-width) {
+    .visually-hidden();
+  }
+
+  @media (min-width: @desktop-width) {
+    .visually-hidden();
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-header--line-bottom {
+    border: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header--line-bottom {
+    border: none;
+  }
+}

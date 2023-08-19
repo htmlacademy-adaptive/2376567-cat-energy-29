@@ -8,9 +8,41 @@
   width: 100%;
   text-transform: uppercase;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
   font-family: @fontRegular;
+
+  &--main {
+    font-size: 14px;
+  }
 }
+
+@media (min-width: @tablet-width) {
+
+  .button--main {
+    position: absolute;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 20px;
+    top: 278px;
+    left: 120px;
+    padding: 17px 27px;
+    width: 244px;
+    height: 56px;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+
+  .button--main {
+    top: 328px;
+    left: 80px;
+
+  }
+
+
+}
+

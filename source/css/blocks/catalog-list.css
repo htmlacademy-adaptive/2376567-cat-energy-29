@@ -1,8 +1,0 @@
-.catalog-list {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-.catalog-list__product-preview {
-  margin-bottom: 17px;
-}
