@@ -61,10 +61,10 @@
       <nav class="main-header__main-navigation main-navigation">
         <ul class="main-navigation__site-navigation site-navigation"> <!--Добавим класс-центровщик дополнительно позже wrapper-->
           <li class="site-navigation__item">
-            <a class="site-navigation__link" href="index.html">Главная</a>
+            <a class="site-navigation__link site-navigation__link--active" href="index.html">Главная</a>
           </li>
           <li class="site-navigation__item">
-            <a class="site-navigation__link site-navigation__link--active" href="catalog.html">Каталог продукции</a>
+            <a class="site-navigation__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-navigation__item">
             <a class="site-navigation__link" href="form.html">Подбор программы</a>
@@ -256,9 +256,9 @@
       <section class="catalog-main-container__additional-catalog additional-catalog">
         <div class="additional-catalog__wrapper">
           <h2 class="additional-catalog__title additional-catalog__title--line-bottom">Дополнительные товары</h2>
-          <ul class="additional-catalog__catalog-list catalog-list">
-            <li class="catalog-list__item">
-              <div class="catalog-list__additional-product-preview additional-product-preview">
+          <ul class="additional-catalog__catalog-list">
+            <li class="additional-catalog__item">
+              <div class="additional-catalog__additional-product-preview additional-product-preview">
                 <h3 class="additional-product-preview__title">
                   <a class="additional-product-preview__link" href="card.html">Сахарозаменитель</a>
                 </h3>
@@ -272,9 +272,9 @@
               </div>
             </li>
           </ul>
-          <ul class="additional-catalog__catalog-list catalog-list">
-            <li class="catalog-list__item">
-              <div class="catalog-list__additional-product-preview additional-product-preview">
+          <ul class="additional-catalog__catalog-list">
+            <li class="additional-catalog__item">
+              <div class="additional-catalog__additional-product-preview additional-product-preview">
                 <h3 class="additional-product-preview__title">
                   <a class="additional-product-preview__link" href="card.html">Сахарозаменитель</a>
                 </h3>
@@ -288,9 +288,9 @@
               </div>
             </li>
           </ul>
-          <ul class="additional-catalog__catalog-list catalog-list">
-            <li class="catalog-list__item">
-              <div class="catalog-list__additional-product-preview additional-product-preview">
+          <ul class="additional-catalog__catalog-list">
+            <li class="additional-catalog__item">
+              <div class="additional-catalog__additional-product-preview additional-product-preview">
                 <h3 class="additional-product-preview__title">
                   <a class="additional-product-preview__link" href="card.html">Сахарозаменитель</a>
                 </h3>
@@ -304,9 +304,9 @@
               </div>
             </li>
           </ul>
-          <ul class="additional-catalog__catalog-list additional-catalog__catalog-list--last-item catalog-list">
-            <li class="catalog-list__item">
-              <div class="catalog-list__additional-product-preview additional-product-preview">
+          <ul class="additional-catalog__catalog-list additional-catalog__catalog-list--last-item">
+            <li class="additional-catalog__item">
+              <div class="additional-catalog__additional-product-preview additional-product-preview">
                 <h3 class="additional-product-preview__title">
                   <a class="additional-product-preview__link" href="card.html">Сахарозаменитель</a>
                 </h3>
@@ -327,16 +327,16 @@
                   <img class="gift__logo" src="img/gift-icon.png" alt="Подарок">
                   <p class="gift__description">Закажите все и получите чехол для кота в подарок!</p>
               </div>
-              <img class="banner__gift-cover" src="img/gift-banner.png" width="280" height="290">
+              <!-- <img class="banner__gift-cover" src="img/gift-banner.png" width="280" height="290"> -->
           </div>
       </div>
       </section>
     </main>
-    <footer class="main-footer">
-      <div class="main-footer__contacts contacts">
+    <footer class="page__main-footer main-footer">
+      <div class="main-footer__contacts contacts main-footer__contacts--light">
         <div class="contacts__container container">
           <b class="contacts__title">приглашаем к сотрудничеству дилеров!</b>
-          <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
         </div>
       </div>
       <div class="main-footer__locations">

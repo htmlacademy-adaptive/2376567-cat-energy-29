@@ -4,10 +4,10 @@
 
 .catalog-main-container__main-title {
   padding-bottom: 41px;
+  padding-left: 20px;
   border-bottom: 1px solid #ebebeb;
   margin-left: -20px;
   margin-right: -20px;
-  padding-left: 0;
   padding-right: 20px;
 
   // &--line-bottom {
@@ -22,7 +22,29 @@
 
 
 @media (min-width: @tablet-width) {
+  .catalog-main-container__main-title {
+    color: #000000;
+    font-family: @fontRegular;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
 
+    padding: 0;
+    margin-bottom: 84px;
+    // &--line-bottom {
+    //   border-bottom: 1px solid #ebebeb;
+    // }
+  }
+
+  .catalog-main-container__regular-catalog {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .catalog-main-container__main-title--line-bottom {
+    border: none;
+  }
 
 }
 

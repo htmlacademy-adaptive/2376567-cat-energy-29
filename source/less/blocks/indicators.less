@@ -95,10 +95,22 @@
 
     width: 174px;
   }
-
 }
 
 @media (min-width: @desktop-width) {
+  .indicators__list {
+    display: flex;
+    justify-content: left;
+    column-gap: 42px;
+  }
 
+  .indicators__caption {
+    display: flex;
+    white-space: nowrap;
+    gap: 63px;
+  }
 
+  .indicators__descriptor {
+    background-color: #f2f2f2;
+  }
 }

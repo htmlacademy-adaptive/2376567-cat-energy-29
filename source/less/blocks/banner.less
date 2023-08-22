@@ -2,6 +2,12 @@
   position: relative;
 }
 
+.banner__gift {
+  background-image: url("/img/gift-banner.png");
+  width: 280px;
+  height: 290px;
+}
+
 .banner__main-cover {
   position: absolute;
   top: 0;
@@ -22,4 +28,22 @@
   width: 100%;
   height: auto;
   z-index: -1;
+}
+
+@media (min-width: @tablet-width) {
+  .banner__gift {
+    background-image: url("/img/gift-tablet.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #68b738;
+    background-size: cover;
+    width: 100%;
+    min-height: 200px;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+
+
 }

@@ -70,6 +70,7 @@
       "title img"
       "description img"
       "indicators img";
+    grid-template-columns: 436px 1fr;
   }
 
   .example {
@@ -78,12 +79,31 @@
 
   .example__title {
     grid-area: title;
+    color: #000000;
+    text-align: left;
+    font-family: @fontRegular;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+
+    margin-bottom: 146px;
   }
+
   .example__description {
     grid-area: description;
+    color: #444444;
+    font-family: @fontSecondary;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
   }
+
   .example__indicators {
     grid-area: indicators;
+    flex-direction: column;
+    row-gap: 60px;
   }
   // .indicators__list {
   // }
