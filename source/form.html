@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
@@ -61,13 +61,13 @@
       <nav class="main-header__main-navigation main-navigation">
         <ul class="main-navigation__site-navigation site-navigation"> <!--Добавим класс-центровщик дополнительно позже wrapper-->
           <li class="site-navigation__item">
-            <a class="site-navigation__link site-navigation__link--active" href="index.html">Главная</a>
+            <a class="site-navigation__link" href="index.html">Главная</a>
           </li>
           <li class="site-navigation__item">
             <a class="site-navigation__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-navigation__item">
-            <a class="site-navigation__link" href="form.html">Подбор программы</a>
+            <a class="site-navigation__link site-navigation__link--active" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -78,7 +78,7 @@
       <form class="form-main-container__select-form select-form" action="#" method="POST">
         <div class="select-form__program-wrapper">
           <fieldset class="select-form__section">
-            <legend class="select-form__title visually-hidden"><span>данные кота</span></legend>
+            <legend class="select-form__legend visually-hidden"><span>данные кота</span></legend>
             <label class="select-form__field">
               <span class="select-form__field-label">имя:*</span>
               <input class="select-form__field-value" type="text" name="cat-name" id="cat-name" placeholder="Барсик">
@@ -93,25 +93,25 @@
             </label>
           </fieldset>
           <fieldset class="select-form__section">
-            <legend class="select-form__title visually-hidden"><span>программа</span></legend>
+            <legend class="select-form__legend visually-hidden"><span>программа</span></legend>
             <div class="select-form__radio-group radio-group">
               <label class="radio-group__radiobutton radiobutton">
-                <input class="visually-hidden" type="radio" name="program" value="to-slim" checked>
+                <input class="radiobutton__input visually-hidden" type="radio" name="program" value="to-slim" checked>
                 <span class="radiobutton__label">похудение</span>
               </label>
               <label class="radio-group__radiobutton radiobutton">
-                <input class="visually-hidden" type="radio" name="program" value="to-weight">
+                <input class="radiobutton__input visually-hidden" type="radio" name="program" value="to-weight">
                 <span class="radiobutton__label">набор массы</span>
               </label>
               <label class="radio-group__radiobutton radiobutton">
-                <input class="visually-hidden" type="radio" name="program" value="any">
+                <input class="radiobutton__input visually-hidden" type="radio" name="program" value="any">
                 <span class="radiobutton__label">не знаю (нужен ваш совет)</span>
               </label>
             </div>
             </fieldset>
           </div>
             <fieldset class="select-form__section">
-              <legend class="select-form__title visually-hidden">контактные данные (владельца кота)</legend>
+              <legend class="select-form__legend visually-hidden">контактные данные (владельца кота)</legend>
               <span class="select-form__title">Контактные данные (владельца кота)</span>
               <div class="select-form__contact-wrapper">
                 <label class="select-form__field">
@@ -127,14 +127,15 @@
               </div>
             </fieldset>
         <fieldset class="select-form__section">
-          <legend class="select-form__title visually-hidden"><span>комментарий</span></legend>
+          <legend class="select-form__legend visually-hidden"><span>комментарий</span></legend>
           <span class="select-form__title">Комментарий</span>
           <label class="select-form__field">
             <textarea class="select-form__text text" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </label>
         </fieldset>
-        <fieldset class="select-form__section">
-          <legend class="select-form__title visually-hidden"><span>дополнительно</span></legend>
+        <fieldset class="select-form__section select-form__section--last-child">
+          <legend class="select-form__legend visually-hidden"><span>дополнительно</span></legend>
+          <span class="select-form__title">Дополнительно</span>
           <div class="select-form__checkbox-group checkbox-group">
             <label class="checkbox-group__checkbox checkbox">
               <input class="visually-hidden" type="checkbox" name="additional" value="sweetener" checked>
