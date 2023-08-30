@@ -12,7 +12,7 @@
   <body class="page__body">
     <header class="page__main-header main-header">
       <div class="main-header__wrapper container">
-        <a class="main-header__logo logo">
+        <a class="main-header__logo logo" href="index.html">
           <svg class="logo__img" width="33" height="38" viewBox="0 0 33 38" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_153_267)">
             <path d="M6.0117 20.9349V18.6514C12.6311 17.7242 19.3065 17.2752 25.988 17.3076C25.988 17.9139 25.988 18.5302 25.9286 19.1465C27.8277 18.2867 29.8236 17.6691 31.8709 17.3076C30.5661 13.8643 28.1884 10.9536 25.1037 9.02347C22.0189 7.09332 18.398 6.25055 14.7979 6.62482C11.1978 6.9991 7.81798 8.56967 5.17831 11.095C2.53863 13.6202 0.785353 16.9603 0.188175 20.6014L6.0117 20.9349Z" fill="#FDC305"/>
@@ -81,11 +81,11 @@
             <legend class="select-form__legend visually-hidden"><span>данные кота</span></legend>
             <label class="select-form__field">
               <span class="select-form__field-label">имя:*</span>
-              <input class="select-form__field-value" type="text" name="cat-name" id="cat-name" placeholder="Барсик">
+              <input class="select-form__field-value" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required pattern="^[A-Za-zА-Яа-яЁё0-9\s]+$">
             </label>
             <label class="select-form__field">
               <span class="select-form__field-label">вес (кг):*</span>
-              <input class="select-form__field-value" type="text" name="cat-weight" id="cat-weight" placeholder="7">
+              <input class="select-form__field-value" type="text" name="cat-weight" id="cat-weight" placeholder="7" required pattern="[0-9]+$">
             </label>
             <label class="select-form__field">
               <span class="select-form__field-label">возраст (лет):</span>
@@ -116,12 +116,12 @@
               <div class="select-form__contact-wrapper">
                 <label class="select-form__field">
                   <span class="select-form__field-label">E-mail:*</span>
-                  <input class="select-form__field-value" type="email" name="owner-email" id="owner-email" placeholder="kuklachev@gmail.com">
+                  <input class="select-form__field-value select-form__field-value--email" type="email" name="owner-email" id="owner-email" placeholder="kuklachev@gmail.com" required>
                    <!-- значок в поле формы -->
                 </label>
                 <label class="select-form__field">
                   <span class="select-form__field-label">телефон:*</span>
-                  <input class="select-form__field-value" type="tel" name="owner-tel" id="owner-tel" placeholder="8 (960) 900-60-90">
+                  <input class="select-form__field-value select-form__field-value--tel" type="tel" name="owner-tel" id="owner-tel" placeholder="8 (960) 900-60-90" required>
                   <!-- значок в поле формы -->
                 </label>
               </div>
@@ -135,22 +135,22 @@
         </fieldset>
         <fieldset class="select-form__section select-form__section--last-child">
           <legend class="select-form__legend visually-hidden"><span>дополнительно</span></legend>
-          <span class="select-form__title">Дополнительно</span>
+          <span class="select-form__title select-form__title--additional">Дополнительно</span>
           <div class="select-form__checkbox-group checkbox-group">
             <label class="checkbox-group__checkbox checkbox">
-              <input class="visually-hidden" type="checkbox" name="additional" value="sweetener" checked>
+              <input class="checkbox__input visually-hidden" type="checkbox" name="additional" value="sweetener" checked>
               <span class="checkbox__label">сахарозаменитель</span>
             </label>
             <label class="checkbox-group__checkbox checkbox">
-              <input class="visually-hidden" type="checkbox" name="additional" value="whater">
+              <input class="checkbox__input visually-hidden" type="checkbox" name="additional" value="whater">
               <span class="checkbox__label">питьевая вода</span>
             </label>
             <label class="checkbox-group__checkbox checkbox">
-              <input class="visually-hidden" type="checkbox" name="additional" value="milk">
+              <input class="checkbox__input visually-hidden" type="checkbox" name="additional" value="milk">
               <span class="checkbox__label">молоко</span>
             </label>
             <label class="checkbox-group__checkbox checkbox">
-              <input class="visually-hidden" type="checkbox" name="additional" value="vitamins">
+              <input class="checkbox__input visually-hidden" type="checkbox" name="additional" value="vitamins">
               <span class="checkbox__label">витамины</span>
             </label>
           </div>

@@ -13,10 +13,32 @@
   font-weight: 400;
   line-height: 18px;
   font-family: @fontRegular;
+  text-decoration: none;
 
   &--main {
     font-size: 14px;
   }
+
+  &--secondary {
+    background-color: #f2f2f2;
+    color: #444444;
+
+    // &:hover {
+    //   background-color: #ebebeb !important;
+    // }
+  }
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: hsla(0, 0%, 100%, 0.3);
+  }
+}
+
+.button--secondary:hover {
+  background-color: #ebebeb;
 }
 
 @media (min-width: @tablet-width) {
