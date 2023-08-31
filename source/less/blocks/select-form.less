@@ -73,6 +73,7 @@
   display: flex;
   align-items: center;
   gap: 13px;
+  position: relative;
 }
 
 .select-form__field-label {
@@ -102,34 +103,34 @@
   border: 1px solid #d9d9d9;
   border-radius: 2px;
 
-  &--email {
-    background-image: url("/img/email-stroke.svg");
-    background-repeat: no-repeat;
-    background-position: 95% 50%;
+  // &--email {
+  //   background-image: url("/img/email-stroke.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: 95% 50%;
 
-    &:focus {
-      fill: #68b738;
-    }
-  }
+  //   &:focus {
+  //     fill: #68b738;
+  //   }
+  // }
 
-  &--tel {
-    background-image: url("/img/phone-stroke.svg");
-    background-repeat: no-repeat;
-    background-position: 95% 50%;
+  // &--tel {
+  //   background-image: url("/img/phone-stroke.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: 95% 50%;
 
-    &:focus {
-      fill: #68b738;
-    }
-  }
+  //   &:focus {
+  //     fill: #68b738;
+  //   }
+  // }
 
-  &::after {
-    content: "";
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    right: 0;
-    background-image: url("img/email-stroke.svg");
-  }
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   z-index: 2;
+  //   top: 0;
+  //   right: 0;
+  //   background-image: url("img/email-stroke.svg");
+  // }
 
   &:required {
     border: 1px solid #d9d9d9;
@@ -161,6 +162,31 @@
   }
 
 }
+
+.select-form__field-value:focus + .select-form__phone-icon {
+  stroke: #68b738;
+}
+
+.select-form__field-value:focus + .select-form__email-icon {
+  stroke: #68b738;
+}
+
+.select-form__field-value:invalid + .select-form__email-icon {
+  stroke: #ff8282;
+}
+
+.select-form__field-value:invalid + .select-form__phone-icon {
+  stroke: #ff8282;
+}
+
+.select-form__field-value:not(:focus):invalid + .select-form__email-icon {
+  stroke: #222222;
+}
+
+.select-form__field-value:not(:focus):invalid + .select-form__phone-icon {
+  stroke: #222222;
+}
+
 
 .select-form__text {
   display: block;
@@ -223,6 +249,23 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.select-form__phone-icon {
+  position: absolute;
+  right: 15px;
+  &:hover {
+    color: #68b738;
+  }
+}
+
+.select-form__email-icon {
+  position: absolute;
+  right: 15px;
+  &:hover {
+    stroke: #68b738;
+    fill: #68b738;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -325,4 +368,5 @@
   .select-form__button-wrapper {
     gap: 80px;
   }
+
 }
