@@ -39,11 +39,29 @@
     .clear-title();
     display: block;
     max-width: 170px;
+
+    color: #111111;
+    font-family: @fontRegular;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: uppercase;
   }
 
   .contacts__text {
-    display: block;
+    display: flex;
+    flex-direction: column;
     max-width: 170px;
+    justify-content: space-between;
+
+    color:#444444;
+    text-align: right;
+    font-family: @fontSecondary;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
   }
 }
 
@@ -58,7 +76,14 @@
     padding: 65px 73px 50px 77px;
     z-index: 1;
     position: relative;
+    top: 80px;
+    left: -326px;
     max-width: 1220px;
+  }
+
+  .contacts {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
 

@@ -15,6 +15,7 @@
 
 .offer__title {
   .clear-title();
+  font-family: @fontRegular;
   margin: 0;
   margin-bottom: 25px;
   padding: 0;
@@ -55,7 +56,7 @@
     font-size: 60px;
     line-height: 60px;
     color: #000000;
-    max-width: 420px;
+    max-width: 520px;
     text-align: left;
     padding-left: 87px;
     margin: 21px 0 41px;
@@ -76,6 +77,11 @@
     height: 609px;
   }
 
+  .offer__button {
+    position: absolute;
+    display: inline-block;
+  }
+
 }
 
 @media (min-width: @desktop-width) {
@@ -85,20 +91,42 @@
   }
 
   .offer__title {
-    .clear-title();
     padding-top: 55px;
-    padding-left: 82px;
+    padding-left: 80px;
+    margin-bottom: 40px;
+
+    color: #000000;
+    font-family: @fontRegular;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
   }
 
   .offer__slogan {
     margin-top: 0;
     padding-left: 80px;
+    margin-bottom: 52px;
+
+    color: #000000;
+    font-family: @fontRegular;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  .offer__button {
+    top: 286px;
+    left: 190px;
   }
 
   .offer__img {
     position: absolute;
     top: 44px;
     left: 448px;
+    z-index: -1;
   }
 
 }

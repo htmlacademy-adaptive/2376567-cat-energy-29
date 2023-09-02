@@ -1,7 +1,7 @@
 // Берём кнопку
-let btnMenu = document.querySelector(".main-navigation__toggle");
+let btnMenu = document.querySelector(".main-header__toggle");
 // Берём меню
-let ulMenu = document.querySelector(".main-navigation__site-navigation");
+let ulMenu = document.querySelector(".main-header__main-navigation");
 
 // Обработка события нажатия на кнопку
 btnMenu.addEventListener("click", function () {
