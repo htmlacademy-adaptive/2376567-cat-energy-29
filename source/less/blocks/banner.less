@@ -6,7 +6,13 @@
   background-image: url("/img/gift-banner.png");
   width: 280px;
   height: 290px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/gift@2x.png");
+    background-size: cover;
+  }
 }
+
 
 .banner__main-cover {
   position: absolute;
@@ -39,14 +45,19 @@
     background-size: cover;
     width: 100%;
     min-height: 200px;
-  }
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/block-gift-tablet@2x.png");
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
   .banner__gift {
     background-image: url("/img/gift-banner.png");
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/block-gift-desktop@2x");
+    }
   }
-
 }
