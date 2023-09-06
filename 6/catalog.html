@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <title>HTML Academy: Кэт энерджи</title>
+    <base href="https://htmlacademy-adaptive.github.io/2376567-cat-energy-29/6/">
+</head>
+  <body class="page__body">
+    <header class="page__main-header main-header">
+      <div class="main-header__wrapper container">
+        <a class="main-header__logo logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="logo__img" src="img/logo-mobile.svg" alt="Логотип Cat Energy">
+          </picture>
+        </a>
+        <a class="main-header__logo-descriptor logo-descriptor">
+          <svg class="logo-descriptor__img" width="101" height="18">
+            <use xlink:href="img/sprite.svg#logo-descriptor"></use>
+          </svg>
+        </a>
+        <button class="main-header__toggle">
+          <span class="visually-hidden">Открыть меню</span>
+          <svg class="logo-burger" width="24" height="24">
+            <use xlink:href="img/sprite.svg#menu-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <nav class="main-header__main-navigation main-navigation">
+        <ul class="main-navigation__site-navigation site-navigation"> <!--Добавим класс-центровщик дополнительно позже wrapper-->
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link site-navigation__link--active" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page__catalog-main-container catalog-main-container container">
+      <h1 class="catalog-main-container__main-title catalog-main-container__main-title--line-bottom main-title">Каталог продукции</h1>
+      <section class="catalog-main-container__regular-catalog regular-catalog ">
+        <h2 class="regular-catalog__title visually-hidden"><span class="visually-hidden">Каталог основной продукции</span></h2>
+        <ul class="regular-catalog__catalog-list catalog-list">
+          <li class="catalog-list__item">
+            <div class="catalog-list__product-preview product-preview">
+              <h3 class="product-preview__title">
+                <a class="product-preview__link" href="card.html">Cat Energy PRO 500 г</a>
+              </h3>
+              <figure class="product-preview__picture">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/catalog-desktop-1@1x.png, img/catalog-desktop-1@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog-tablet-1@1x.png, img/catalog-tablet-1@2x.png 2x">
+                  <img class="product-preview__img" src="img/catalog-1@1x.png" srcset="img/catalog-2@2x.png 2x" srcset="img/catalog-1@2x.png 2x" width="68" height="86" alt="Cat Energy PRO 500 г">
+                </picture>
+              </figure>
+              <dl class="product-preview__params">
+                <div class="product-preview__param">
+                  <dt class="product-preview__param-name">Масса</dt>
+                  <dd class="product-preview__param-value">500 г</dd>
+                </div>
+                <div class="product-preview__param">
+                  <dt class="product-preview__param-name">Вкус</dt>
+                  <dd class="product-preview__param-value">Курица</dd>
+                </div>
+                <div class="product-preview__param">
+                  <dt class="product-preview__param-name">Цена</dt>
+                  <dd class="product-preview__param-value">700 ₽</dd>
+                </div>
+              </dl>
+            </div>
+            <a class="product-preview__button button" href="#">заказать</a>
+          </li>
+          <li class="catalog-list__item">
+            <div class="catalog-list__product-preview product-preview">
+              <h3 class="product-preview__title">
+                <a class="product-preview__link" href="card.html">Cat Energy PRO 1000 г</a>
+              </h3>
+              <figure class="product-preview__picture">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/catalog-desktop-2@1x.png, img/catalog-desktop-2@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog-tablet-2@1x.png, img/catalog-tablet-2@2x.png 2x">
+                  <img class="product-preview__img" src="img/catalog-2@1x.png" srcset="img/catalog-2@2x.png 2x" width="84" height="100" alt="Cat Energy PRO 500 г">
+                </picture>
+              </figure>
+              <dl class="product-preview__params">
+                <div class="product-preview__param">
+                  <dt class="product-preview__param-name">Масса</dt>
+                  <dd class="product-preview__param-value">1000 г</dd>
+                </div>
+                <div class="product-preview__param">
+                  <dt class="product-preview__param-name">Вкус</dt>
+                  <dd class="product-preview__param-value">Курица</dd>
+                </div>
+                <div class="product-preview__param">
+                  <dt class="product-preview__param-name">Цена</dt>
+                  <dd class="product-preview__param-value">1000 ₽</dd>
+                </div>
+              </dl>
+            </div>
+            <a class="product-preview__button button" href="#">заказать</a>
+          </li>
+          <li class="catalog-list__item">
+            <div class="catalog-list__product-preview product-preview">
+              <h3 class="product-preview__title">
+                <a class="product-preview__link" href="card.html">Cat Energy PRO 500 г</a>
+              </h3>
+              <figure class="product-preview__picture">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/catalog-desktop-3@1x.png, img/catalog-desktop-3@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog-tablet-3@1x.png, img/catalog-tablet-3@2x.png 2x">
+                  <img class="product-preview__img" src="img/catalog-3@1x.png" srcset="img/catalog-3@2x.png 2x" width="68" height="78" alt="Cat Energy PRO 500 г">
+                </picture>
+              </figure>
+              <dl class="product-preview__params">
+                <div class="product-preview__param">
+                  <dt class="product-preview__param-name">Масса</dt>
+                  <dd class="product-preview__param-value">500 г</dd>
+                </div>
+                <div class="product-preview__param">
+                  <dt class="product-preview__param-name">Вкус</dt>
+                  <dd class="product-preview__param-value">Рыба</dd>
+                </div>
+                <div class="product-preview__param">
+                  <dt class="product-preview__param-name">Цена</dt>
+                  <dd class="product-preview__param-value">700 ₽</dd>
+                </div>
+              </dl>
+            </div>
+            <a class="product-preview__button button" href="#">заказать</a>
+          </li>
+          <li class="catalog-list__item">
+            <div class="catalog-list__product-preview product-preview">
+              <h3 class="product-preview__title">
+                <a class="product-preview__link" href="card.html">Cat Energy PRO 1000 г</a>
+              </h3>
+              <figure class="product-preview__picture">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/catalog-desktop-4@1x.png, img/catalog-desktop-4@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog-tablet-4@1x.png, img/catalog-tablet-4@2x.png 2x">
+                  <img class="product-preview__img" src="img/catalog-4@1x.png" srcset="img/catalog-4@2x.png 2x" width="84" height="100" alt="Cat Energy PRO 1000 г">
+                </picture>
+              </figure>
+              <dl class="product-preview__params">
+                <div class="product-preview__param">
+                  <dt class="product-preview__param-name">Масса</dt>
+                  <dd class="product-preview__param-value">500 г</dd>
+                </div>
+                <div class="product-preview__param">
+                  <dt class="product-preview__param-name">Вкус</dt>
+                  <dd class="product-preview__param-value">Рыба</dd>
+                </div>
+                <div class="product-preview__param">
+                  <dt class="product-preview__param-name">Цена</dt>
+                  <dd class="product-preview__param-value">1000 ₽</dd>
+                </div>
+              </dl>
+            </div>
+            <a class="product-preview__button button" href="#">заказать</a>
+          </li>
+          <li class="catalog-list__item">
+            <div class="catalog-list__product-preview product-preview">
+              <h3 class="product-preview__title">
+                <a class="product-preview__link" href="card.html">Cat Energy PRO 500 г</a>
+              </h3>
+              <figure class="product-preview__picture">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/catalog-desktop-5@1x.png, img/catalog-desktop-5@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog-tablet-5@1x.png, img/catalog-tablet-5@2x.png 2x">
+                  <img class="product-preview__img" src="img/catalog-5@1x.png" srcset="img/catalog-5@2x.png 2x" width="68" height="78" alt="Cat Energy PRO 500 г">
+                </picture>
+              </figure>
+              <dl class="product-preview__params">
+                <div class="product-preview__param">
+                  <dt class="product-preview__param-name">Масса</dt>
+                  <dd class="product-preview__param-value">500 г</dd>
+                </div>
+                <div class="product-preview__param">
+                  <dt class="product-preview__param-name">Вкус</dt>
+                  <dd class="product-preview__param-value">Гречка</dd>
+                </div>
+                <div class="product-preview__param">
+                  <dt class="product-preview__param-name">Цена</dt>
+                  <dd class="product-preview__param-value">400 ₽</dd>
+                </div>
+              </dl>
+            </div>
+            <a class="product-preview__button button" href="#">заказать</a>
+          </li>
+          <li class="catalog-list__item">
+            <div class="catalog-list__product-preview product-preview">
+              <h3 class="product-preview__title">
+                <a class="product-preview__link" href="card.html">Cat Energy PRO 1000 г</a>
+              </h3>
+              <figure class="product-preview__picture">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/catalog-desktop-6@1x.png, img/catalog-desktop-6@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog-tablet-6@1x.png, img/catalog-tablet-6@2x.png 2x">
+                  <img class="product-preview__img" src="img/catalog-6@1x.png" srcset="img/catalog-6@2x.png 2x" width="84" height="100" alt="Cat Energy PRO 1000 г">
+                </picture>
+              </figure>
+              <dl class="product-preview__params">
+                <div class="product-preview__param">
+                  <dt class="product-preview__param-name">Масса</dt>
+                  <dd class="product-preview__param-value">1000 г</dd>
+                </div>
+                <div class="product-preview__param">
+                  <dt class="product-preview__param-name">Вкус</dt>
+                  <dd class="product-preview__param-value">Гречка</dd>
+                </div>
+                <div class="product-preview__param">
+                  <dt class="product-preview__param-name">Цена</dt>
+                  <dd class="product-preview__param-value">700 ₽</dd>
+                </div>
+              </dl>
+            </div>
+            <a class="product-preview__button button" href="#">заказать</a>
+          </li>
+          <li class="catalog-list__item">
+            <div class="catalog-list__product-preview product-preview">
+              <h3 class="product-preview__title">
+                <a class="product-preview__link" href="card.html">Cat Energy SLIM 500 г</a>
+              </h3>
+              <figure class="product-preview__picture">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/catalog-desktop-7@1x.png, img/catalog-desktop-7@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog-tablet-7@1x.png, img/catalog-tablet-7@2x.png 2x">
+                  <img class="product-preview__img" src="img/catalog-7@1x.png" srcset="img/catalog-7@2x.png 2x" width="72" height="84" alt="Cat Energy SLIM 500 г">
+                </picture>
+              </figure>
+              <dl class="product-preview__params">
+                <div class="product-preview__param">
+                  <dt class="product-preview__param-name">Масса</dt>
+                  <dd class="product-preview__param-value">500 г</dd>
+                </div>
+                <div class="product-preview__param">
+                  <dt class="product-preview__param-name">Вкус</dt>
+                  <dd class="product-preview__param-value">Рис</dd>
+                </div>
+                <div class="product-preview__param">
+                  <dt class="product-preview__param-name">Цена</dt>
+                  <dd class="product-preview__param-value">500 ₽</dd>
+                </div>
+              </dl>
+            </div>
+            <a class="product-preview__button button" href="#">заказать</a>
+          </li>
+          <li class="catalog-list__item catalog-list__item--light">
+            <div class="catalog-list__pagination pagination">
+              <svg class="pagination__img" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="15" x2="15" y2="30" stroke="#D3D3D3" stroke-width="2"/>
+                <line x1="30" y1="15" y2="15" stroke="#D3D3D3" stroke-width="2"/>
+              </svg>
+              <a class="pagination__link" href="#">
+                <span class="pagination__link-description">Показать еще 100500 товаров</span>
+              </a>
+              <p class="pagination__promo-caption">На самом деле вкусов гораздо больше!</p>
+              <a class="pagination__button button button--secondary" href="#">показать все</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="catalog-main-container__additional-catalog additional-catalog">
+        <h2 class="additional-catalog__title">Дополнительные товары</h2>
+        <div class="additional-catalog__wrapper">
+          <div class="additional-catalog__list-container">
+            <ul class="additional-catalog__catalog-list">
+              <li class="additional-catalog__item additional-catalog__item--first-item">
+                <div class="additional-catalog__additional-product-preview additional-product-preview">
+                  <h3 class="additional-product-preview__title">
+                    <a class="additional-product-preview__link" href="card.html">Сахарозаменитель</a>
+                  </h3>
+                  <dl class="additional-product-preview__params">
+                    <div class="additional-product-preview__param">
+                      <dt class="additional-product-preview__param-capacity">1 упаковка (100 г)</dt>
+                      <dd class="additional-product-preview__param-cost">200 ₽</dd>
+                    </div>
+                  </dl>
+                  <a class="additional-product-preview__button button" href="#">заказать</a>
+                </div>
+              </li>
+            </ul>
+            <ul class="additional-catalog__catalog-list">
+              <li class="additional-catalog__item">
+                <div class="additional-catalog__additional-product-preview additional-product-preview">
+                  <h3 class="additional-product-preview__title">
+                    <a class="additional-product-preview__link" href="card.html">питьевая вода</a>
+                  </h3>
+                  <dl class="additional-product-preview__params">
+                    <div class="additional-product-preview__param">
+                      <dt class="additional-product-preview__param-capacity">5 литров</dt>
+                      <dd class="additional-product-preview__param-cost">50 ₽</dd>
+                    </div>
+                  </dl>
+                  <a class="additional-product-preview__button button" href="#">заказать</a>
+                </div>
+              </li>
+            </ul>
+            <ul class="additional-catalog__catalog-list">
+              <li class="additional-catalog__item">
+                <div class="additional-catalog__additional-product-preview additional-product-preview">
+                  <h3 class="additional-product-preview__title">
+                    <a class="additional-product-preview__link" href="card.html">молоко</a>
+                  </h3>
+                  <dl class="additional-product-preview__params">
+                    <div class="additional-product-preview__param">
+                      <dt class="additional-product-preview__param-capacity">1 литр</dt>
+                      <dd class="additional-product-preview__param-cost">100 ₽</dd>
+                    </div>
+                  </dl>
+                  <a class="additional-product-preview__button button" href="#">заказать</a>
+                </div>
+              </li>
+            </ul>
+            <ul class="additional-catalog__catalog-list additional-catalog__catalog-list--last-item">
+              <li class="additional-catalog__item">
+                <div class="additional-catalog__additional-product-preview additional-product-preview">
+                  <h3 class="additional-product-preview__title">
+                    <a class="additional-product-preview__link" href="card.html">Витамины</a>
+                  </h3>
+                  <dl class="additional-product-preview__params">
+                    <div class="additional-product-preview__param">
+                      <dt class="additional-product-preview__param-capacity">1 упаковка (30 г)</dt>
+                      <dd class="additional-product-preview__param-cost">300 ₽</dd>
+                    </div>
+                  </dl>
+                  <a class="additional-product-preview__button button" href="#">заказать</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="gift-block">
+            <div class="gift-block__banner banner">
+                <div class="banner__gift gift">
+                    <img class="gift__logo" src="img/gift-icon.png" alt="Подарок">
+                    <p class="gift__description">Закажите все и получите чехол для кота в подарок!</p>
+                </div>
+                <!-- <img class="banner__gift-cover" src="img/gift-banner.png" width="280" height="290"> -->
+            </div>
+        </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page__main-footer main-footer">
+      <div class="main-footer__contacts contacts main-footer__contacts--light">
+        <div class="contacts__container container">
+          <b class="contacts__title">приглашаем к сотрудничеству дилеров!</b>
+          <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+        </div>
+      </div>
+      <div class="main-footer__locations">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1730715c15d9882df8bdbf78f69a807b00bc46aa9933004a24a16769702ab3f3&amp;width=100%25&amp;height=360&amp;lang=ru_RU&amp;scroll=true"></script>
+      </div>
+      <div class="main-footer__logo-container container">
+        <div class="main-footer__logo-descriptor">
+          <a class="logo-descriptor logo-descriptor--line-bottom">
+            <svg class="logo-descriptor__img" width="101" height="18">
+              <use xlink:href="img/sprite.svg#logo-descriptor"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="main-footer__socials">
+          <ul class="socials socials--line-bottom">
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <svg width="28" height="22">
+                  <use xlink:href="img/sprite.svg#vk-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <svg width="24" height="19">
+                  <use xlink:href="img/sprite.svg#youtube-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <svg width="20" height="18">
+                  <use xlink:href="img/sprite.svg#telegram-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__copyright">
+          <div class="copyright">
+              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              <a class="copyright__logo logo-htmlacademy">
+                <svg class="logo-htmlacademy__img" width="27" height="34">
+                  <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+                </svg>
+              </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main-navigation__toggle.js"></script>
+  </body>
+</html>
