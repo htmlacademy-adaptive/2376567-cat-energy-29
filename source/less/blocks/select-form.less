@@ -134,31 +134,34 @@
 
   &:required {
     border: 1px solid #d9d9d9;
+
   }
 
   &:hover {
     outline: none;
+    border: 1px solid #cdcdcd;
     box-shadow: 0 0 0 1px #cdcdcd;
   }
 
   &:focus {
     outline: none;
     box-shadow: 0 0 0 1px #444444;
-    // #cdcdcd;
+    border: 1px solid #444444;
   }
 
   &:not(:focus):invalid {
     border: 1px solid #e7e7e7;
+    box-shadow: 0 0 0 1px #e7e7e7;
   }
 
   &:invalid {
     border: 1px solid #ff8282;
-    box-shadow: none;
+    box-shadow: 0 0 0 1px #ff8282;
     // #ff8282
   }
 
   &:hover:invalid {
-    box-shadow: 0 0 0 1px #cdcdcd;
+    box-shadow: 0 0 0 1px #ff8282;
   }
 
 }
@@ -262,10 +265,10 @@
 .select-form__email-icon {
   position: absolute;
   right: 15px;
-  &:hover {
-    stroke: #68b738;
-    fill: #68b738;
-  }
+  // &:hover {
+  //   stroke: #68b738;
+  //   fill: #68b738;
+  // }
 }
 
 @media (min-width: @tablet-width) {
