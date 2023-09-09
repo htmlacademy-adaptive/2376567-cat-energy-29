@@ -54,7 +54,7 @@
     align-items: center;
     margin: 0 auto;
     margin-bottom: 74px;
-    padding: 0 110px 0;
+    padding: 55px 110px 0;
     width: @desktop-width;
     background-color: transparent;
   }
@@ -74,6 +74,10 @@
     background-position: 0%;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/index-background-desktop@2x.png");
+    }
   }
 
   .page__main-footer {

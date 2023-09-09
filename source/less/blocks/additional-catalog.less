@@ -52,8 +52,11 @@
 
 .additional-catalog__item {
   border-bottom: 1px solid #ebebeb;
-  padding: 20px;
-  margin: 0 -20px 0 -20px;
+  padding: 20px 0 20px 0;
+  // margin: 0 -20px 0 -20px;
+    &--first-item {
+      border-top: 1px solid #ebebeb;
+    }
 }
 
 .additional-catalog__additional-product-preview {
@@ -139,6 +142,7 @@
   .additional-catalog__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     // margin-bottom: 2px;
   }
 

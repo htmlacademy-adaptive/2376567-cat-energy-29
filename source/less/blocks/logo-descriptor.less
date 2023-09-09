@@ -1,12 +1,19 @@
 .logo-descriptor {
   display: block;
+  cursor: pointer;
+  color: #111111;
 }
 
 .logo-descriptor:hover {
-  stroke: #3e3e3e;
-  :active {
-    stroke: #6b6b6b;
+  color: #3e3e3e;
+
+  &:active {
+    color: #6b6b6b;
   }
+}
+
+.logo-descriptor__img {
+  fill: currentColor;
 }
 
 .logo-descriptor--line-bottom {

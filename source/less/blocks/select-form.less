@@ -134,31 +134,34 @@
 
   &:required {
     border: 1px solid #d9d9d9;
+
   }
 
   &:hover {
     outline: none;
+    border: 1px solid #cdcdcd;
     box-shadow: 0 0 0 1px #cdcdcd;
   }
 
   &:focus {
     outline: none;
     box-shadow: 0 0 0 1px #444444;
-    // #cdcdcd;
+    border: 1px solid #444444;
   }
 
   &:not(:focus):invalid {
     border: 1px solid #e7e7e7;
+    box-shadow: 0 0 0 1px #e7e7e7;
   }
 
   &:invalid {
     border: 1px solid #ff8282;
-    box-shadow: none;
+    box-shadow: 0 0 0 1px #ff8282;
     // #ff8282
   }
 
   &:hover:invalid {
-    box-shadow: 0 0 0 1px #cdcdcd;
+    box-shadow: 0 0 0 1px #ff8282;
   }
 
 }
@@ -262,10 +265,10 @@
 .select-form__email-icon {
   position: absolute;
   right: 15px;
-  &:hover {
-    stroke: #68b738;
-    fill: #68b738;
-  }
+  // &:hover {
+  //   stroke: #68b738;
+  //   fill: #68b738;
+  // }
 }
 
 @media (min-width: @tablet-width) {
@@ -294,7 +297,7 @@
   }
 
   .select-form__radio-group {
-    padding: 25px 20px 25px 20px;
+    padding: 23px 20px 27px 20px;
     border: 1px solid #d9d9d9;
     margin: 0;
   }
@@ -306,6 +309,7 @@
   .select-form__field-value {
     font-size: 20px;
     padding-left: 20px;
+    height: 52px;
   }
 
   .select-form__title {
@@ -327,7 +331,9 @@
 
   .select-form__section {
     margin-bottom: 72px;
-      &:last-child {
+    gap: 20px;
+
+    &:last-child {
       margin-bottom: 0;
     }
   }
@@ -349,6 +355,7 @@
   .select-form__section {
     flex-grow: 1;
     flex-wrap: nowrap;
+    gap: 20px;
   }
 
   .select-form__checkbox-group {
@@ -359,6 +366,10 @@
 
   .select-form__field {
     flex-basis: 50%;
+  }
+
+  .select-form__field-value {
+    height: 55px;
   }
 
   .select-form__button {
