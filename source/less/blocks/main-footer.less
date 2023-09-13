@@ -14,6 +14,15 @@
 
 .main-footer__locations {
   margin-bottom: 40px;
+  background-image: url("../img/location-mobile@x2.png");
+  background-size: cover;
+  // background-repeat: no-repeat;
+  background-position: center;
+  height: 362px;
+
+  & iframe {
+    height: 362px;
+  }
 }
 
 .main-footer__logo-descriptor {
@@ -31,11 +40,26 @@
   padding: 0 0 40px 0;
 }
 
+@media (min-resolution: 2dppx) {
+  .main-footer__locations {
+    background-image: url("../img/location-mobile@x2.png");
+  }
+}
+
 @media (min-width: @tablet-width) {
   .main-footer__logo-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .main-footer__locations {
+    background-image: url("../img/location-tablet@1x.png");
+    height: 400px;
+
+    & iframe {
+      height: 400px;
+    }
   }
 
   .logo-descriptor {
@@ -51,18 +75,27 @@
   }
 }
 
+@media (min-width: @tablet-width) and (min-resolution: 2dppx) {
+  .main-footer__locations {
+    background-image: url("../img/location-tablet@2x.png");
+  }
+}
+
 @media (min-width: @desktop-width) {
   .main-footer__locations {
-    // position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    background-image: url("../img/location-desktop@1x.png");
+    height: 400px;
   }
 
   .main-footer__contacts {
     padding-top: 0;
     padding-bottom: 0;
     margin-bottom: -200px;
+  }
+}
+
+@media (min-width: @desktop-width) and (min-resolution: 2dppx) {
+  .main-footer__locations {
+    background-image: url("../img/location-desktop@2x.png");
   }
 }

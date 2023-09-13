@@ -63,7 +63,7 @@
   content: "";
   position: absolute;
   left: -4px;
-  bottom: 11px;
+  bottom: 10px;
   border: 9px solid transparent;
   border-right: 9px solid #666666;
 }
@@ -71,8 +71,8 @@
 .slider__drag::before {
   content: "";
   position: absolute;
-  left: 26px;
-  bottom: 11px;
+  left: 22px;
+  bottom: 10px;
   border: 9px solid transparent;
   border-left: 9px solid #666666;
 }
@@ -104,6 +104,16 @@
 @media (min-width: @tablet-width) {
   .slider__slide-before {
     background-color: #ffffff;
+  }
+
+  .slider__drag::after {
+    left: -4px;
+    bottom: 10px;
+  }
+
+  .slider__drag::before {
+    left: 23px;
+    bottom: 10px;
   }
 }
 
