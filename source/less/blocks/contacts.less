@@ -1,6 +1,6 @@
 .contacts {
   padding: 26px 0;
-  display: flex;
+  // display: flex;
 }
 
 .contacts__title {
@@ -12,6 +12,11 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.contacts__transfer {
+  display: inline-block;
+  margin-right: 36px;
 }
 
 .contacts__text {
@@ -27,12 +32,18 @@
 
 .contacts__container {
   display: flex;
+  gap: 11px;
 }
 
 @media (min-width: @tablet-width) {
+  .contacts {
+    padding: 60px 0 61px 0;
+  }
+
   .contacts__container {
     display: flex;
     justify-content: space-between;
+    padding: 0 70px;
   }
 
   .contacts__title {
@@ -49,13 +60,17 @@
     text-transform: uppercase;
   }
 
+  .contacts__transfer {
+    display: block;
+  }
+
   .contacts__text {
     display: flex;
     flex-direction: column;
-    max-width: 170px;
+    max-width: 158px;
     justify-content: space-between;
 
-    color:#444444;
+    color: #444444;
     text-align: right;
     font-family: @fontSecondary;
     font-size: 16px;
@@ -69,21 +84,50 @@
   .contacts__container {
     display: flex;
     box-sizing: border-box;
-    width: 570px;
-    height: 201px;
+    width: 565px;
+    height: 199px;
     background-color: #ffffff;
-    justify-content: space-between;
-    padding: 65px 73px 50px 77px;
+    padding: 60px 78px 60px 80px;
     z-index: 1;
     position: relative;
-    top: 80px;
-    left: -326px;
+    top: 96px;
+    left: -327px;
     max-width: 1220px;
+    flex-wrap: wrap;
+  }
+
+  .contacts__title {
+    .clear-title();
+    display: block;
+    max-width: 170px;
+
+    color: #111111;
+    font-family: @fontRegular;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: uppercase;
   }
 
   .contacts {
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  .contacts__text {
+    display: flex;
+    flex-direction: column;
+    max-width: 158px;
+    justify-content: space-between;
+    text-align: left;
+
+    color: #444444;
+    font-family: @fontSecondary;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
   }
 
 

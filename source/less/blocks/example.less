@@ -12,7 +12,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
 }
 
 .example__description {
@@ -24,12 +24,14 @@
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 @media (min-width: @tablet-width) {
   .example {
     background-color: #ffffff;
+    padding-top: 43px;
+    padding-bottom: 101px;
   }
 
   .example__title {
@@ -60,6 +62,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    column-gap: 166px;
   }
 }
 
@@ -70,11 +73,13 @@
       "title img"
       "description img"
       "indicators img";
-    grid-template-columns: 436px 1fr;
+    grid-template-columns: 433px 1fr;
+    grid-template-rows: 207px 164px auto;
   }
 
   .example {
     background-color: #ffffff;
+    padding-bottom: 50px;
   }
 
   .example__title {
@@ -87,7 +92,7 @@
     font-weight: 400;
     line-height: 60px;
 
-    margin-bottom: 146px;
+    margin-bottom: none;
   }
 
   .example__description {
@@ -98,38 +103,18 @@
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
+    margin-bottom: none;
   }
 
   .example__indicators {
     grid-area: indicators;
     flex-direction: column;
-    row-gap: 60px;
+    row-gap: 22px;
+    justify-content: flex-start;
   }
-  // .indicators__list {
-  // }
-  // .indicators__item {
-  // }
-  // .indicators__value {
-  // }
-  // .indicators__descriptor {
-  // }
-  // .indicators__caption {
-  // }
+
   .example__slider {
     grid-area: img;
+    margin-left: auto;
   }
-  //   .slider__wrapper {
-  //   }
-  //   .slider__items {
-  //   }
-  //   .slider__item {
-  //   }
-  //   .example__img {
-  //   }
-  //   .slider__control {
-  //   }
-  //   .slider__control_drag {
-  //
 }
-// .example__indicators {
-// }
