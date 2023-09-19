@@ -12,7 +12,7 @@
   border: none;
   // padding-bottom: 24px;
   // border-bottom: 1px solid #d9d9d9;
-  margin-bottom: 22px;
+  margin-bottom: 26px;
   flex-wrap: wrap;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .select-form__radio-group {
-  padding: 25px 100% 25px 100%;
+  padding: 22px 100% 20px 100%;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
   margin: 0 -100% 0 -100%;
@@ -41,20 +41,21 @@
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   position: relative;
   margin-right: 77px;
-    &::after {
+
+  &::after {
     content: "";
     position: absolute;
     width: 1000vw;
-    top: 30%;
+    top: 14px;
     left: 50%;
     transform: translate(-50%);
-    height: 2px;
+    height: 3px;
     background: #68b738;
     z-index: -1;
-    }
+  }
 
   //   // &::before {
   //   // content: "";
@@ -102,6 +103,8 @@
   text-transform: uppercase;
   border: 1px solid #d9d9d9;
   border-radius: 2px;
+  padding-left: 14px;
+  padding-top: 2px;
 
   // &--email {
   //   background-image: url("/img/email-stroke.svg");
@@ -151,7 +154,7 @@
 
   &:not(:focus):invalid {
     border: 1px solid #e7e7e7;
-    box-shadow: 0 0 0 1px #e7e7e7;
+    box-shadow: none;
   }
 
   &:invalid {
@@ -204,8 +207,8 @@
   text-transform: uppercase;
   white-space: nowrap;
   border: 1px solid #d9d9d9;
-  padding-left: 20px;
-  padding-top: 10px;
+  padding-left: 13px;
+  padding-top: 14px;
 
   &:hover {
     outline: none;
@@ -227,12 +230,13 @@
 .select-form__checkbox-group {
   display: flex;
   flex-direction: column;
-  gap: 19px;
-  margin-bottom: 34px;
+  gap: 0;
+  margin-bottom: 13px;
+  margin-top: -5px;
 }
 
 .select-form__contact-wrapper {
-  gap: 20px;
+  gap: 15px;
   display: flex;
   flex-direction: column;
 }
@@ -275,29 +279,41 @@
   .select-form__checkbox-group {
     display: grid;
     grid-template-columns: max-content max-content;
-    column-gap: 183px;
-    row-gap: 42px;
+    column-gap: 124px;
+    row-gap: 20px;
+    margin-bottom: 29px;
   }
 
   .select-form__note-text {
     display: inline-block;
-    width: 174px;
+    width: 187px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 12px;
   }
 
   .select-form__button {
     display: inline-block;
     width: 282px;
+    padding: 14px 26px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-decoration: none;
   }
 
   .select-form__button-wrapper {
     display: flex;
     flex-direction: row;
-    gap: 64px;
+    gap: 57px;
     align-items: center;
   }
 
   .select-form__radio-group {
-    padding: 23px 20px 27px 20px;
+    padding: 21px 20px 26px 20px;
     border: 1px solid #d9d9d9;
     margin: 0;
   }
@@ -314,15 +330,26 @@
 
   .select-form__title {
     font-size: 36px;
-    margin-bottom: 87px;
+    margin-bottom: 62px;
+    margin-left: -39px;
+    padding-left: 39px;
+    padding-right: 35px;
+
+    &::after {
+      top: 15px;
+    }
 
     &--additional {
-      margin-bottom: 36px;
+      margin-bottom: 39px;
     }
   }
 
   .select-form__text {
+    padding-left: 19px;
+    padding-top: 23px;
     font-size: 20px;
+    min-height: 175px;
+    margin-bottom: 8px;
   }
 
   .select-form__program-wrapper {
@@ -337,6 +364,12 @@
       margin-bottom: 0;
     }
   }
+
+  .select-form__contact-wrapper {
+    gap: 21px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -344,10 +377,29 @@
     display: flex;
     align-content: stretch;
     column-gap: 40px;
+    margin-bottom: 2px;
+  }
+
+  .select-form__radio-group {
+    padding: 25px 20px 25px 20px;
+    border: 1px solid #d9d9d9;
+    margin: 0;
+  }
+
+  .select-form__title {
+    margin-bottom: 63px;
+
+    &--additional {
+      margin-bottom: 42px;
+    }
+  }
+
+  .select-form__text {
+    padding-top: 17px;
   }
 
   .select-form__contact-wrapper {
-    gap: 20px;
+    gap: 82px;
     display: flex;
     flex-direction: row;
   }
@@ -355,29 +407,36 @@
   .select-form__section {
     flex-grow: 1;
     flex-wrap: nowrap;
-    gap: 20px;
+    gap: 17px;
+    min-width: 570px;
   }
 
   .select-form__checkbox-group {
     display: grid;
     grid-template-columns: 20% 20% 20% 20%;
-    column-gap: 104px;
+    column-gap: 81px;
+    margin-bottom: 39px;
   }
 
   .select-form__field {
-    flex-basis: 50%;
+    flex-basis: 46.7%;
   }
 
   .select-form__field-value {
-    height: 55px;
+    min-height: 55px;
   }
 
   .select-form__button {
-    flex-basis: 40%;
+    flex-basis: 47%;
+    padding: 14px 26px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-decoration: none;
   }
 
   .select-form__button-wrapper {
-    gap: 80px;
+    gap: 69px;
   }
-
 }
