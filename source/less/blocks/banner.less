@@ -3,12 +3,12 @@
 }
 
 .banner__gift {
-  background-image: url("/img/gift-banner.png");
+  background-image: url("../img/gift-banner.png");
   width: 280px;
-  height: 290px;
+  min-height: 290px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("/img/gift@2x.png");
+    background-image: url("../img/gift@2x.png");
     background-size: cover;
   }
 }
@@ -37,8 +37,12 @@
 }
 
 @media (min-width: @tablet-width) {
+  .banner {
+    position: static;
+  }
+
   .banner__gift {
-    background-image: url("/img/gift-tablet.png");
+    background-image: url("../img/gift-tablet.png");
     background-repeat: no-repeat;
     background-position: center;
     background-color: #68b738;
@@ -47,17 +51,18 @@
     min-height: 200px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/img/block-gift-tablet@2x.png");
+      background-image: url("../img/block-gift-tablet@2x.png");
     }
   }
 }
 
 @media (min-width: @desktop-width) {
   .banner__gift {
-    background-image: url("/img/gift-banner.png");
+    background-image: url("../img/gift-banner.png");
+    min-height: 288px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/img/block-gift-desktop@2x.png");
+      background-image: url("../img/block-gift-desktop@2x.png");
     }
   }
 }

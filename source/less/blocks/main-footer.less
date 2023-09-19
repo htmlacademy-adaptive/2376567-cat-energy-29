@@ -3,32 +3,39 @@
 }
 
 .main-footer__contacts {
-  // padding: 0 20px 0;
   background-color: #f2f2f2;
 }
 
-// .main-footer__contacts--light {
-//   // padding: 0 20px 0;
-//   background-color: #ffffff;
-// }
-
 .main-footer__locations {
-  margin-bottom: 40px;
+  margin-bottom: 38px;
+  background-image: url("../img/location-mobile@x2.png");
+  background-size: cover;
+  // background-repeat: no-repeat;
+  background-position: center;
+  height: 362px;
+
+  & iframe {
+    height: 362px;
+  }
 }
 
 .main-footer__logo-descriptor {
-  // padding: 0 20px 0 20px;
   margin-bottom: 20px;
   text-align: center;
 }
 
 .main-footer__socials {
-  // padding: 0 20px 0 20px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .main-footer__copyright {
   padding: 0 0 40px 0;
+}
+
+@media (min-resolution: 2dppx) {
+  .main-footer__locations {
+    background-image: url("../img/location-mobile@x2.png");
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -38,31 +45,47 @@
     justify-content: space-between;
   }
 
-  .logo-descriptor {
-    border: none;
+  .main-footer__locations {
+    background-image: url("../img/location-tablet@1x.png");
+    height: 400px;
+    margin-bottom: 55px;
+
+    & iframe {
+      height: 400px;
+    }
   }
 
-  .socials--line-bottom {
-    border: none;
+  .main-footer__logo-descriptor {
+    margin-right: 30px;
   }
 
   .main-footer__contacts {
-    background-color: #f2f2f2;
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: @tablet-width) and (min-resolution: 2dppx) {
+  .main-footer__locations {
+    background-image: url("../img/location-tablet@2x.png");
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-footer__locations {
-    // position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    background-image: url("../img/location-desktop@1x.png");
+    height: 400px;
+    margin-bottom: 66px;
   }
 
   .main-footer__contacts {
     padding-top: 0;
     padding-bottom: 0;
     margin-bottom: -200px;
+  }
+}
+
+@media (min-width: @desktop-width) and (min-resolution: 2dppx) {
+  .main-footer__locations {
+    background-image: url("../img/location-desktop@2x.png");
   }
 }

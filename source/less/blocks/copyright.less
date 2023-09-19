@@ -1,21 +1,19 @@
 .copyright {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .copyright__link {
   text-decoration: none;
-  color: #444444;
-  font-family: @fontSecondary;
+  color: #666666;
+  font-family: @fontSecondary, "Arial", "Helvetica", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
 }
 
-// .copyright:hover {
-
-// }
 .copyright__link:hover {
   color: #68b738;
 }
@@ -29,26 +27,20 @@
   cursor: pointer;
 }
 
-// .copyright__logo {
-
-
-// }
+.copyright__logo {
+  color: #666666;
+  padding-top: 3px;
+}
 
 @media (min-width: @tablet-width) {
   .copyright__link {
     margin-right: 23px;
 
     color: #444444;
-    font-family: @fontSecondary;
+    font-family: @fontSecondary, "Arial", "Helvetica", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
   }
-
-}
-
-@media (min-width: @desktop-width) {
-
-
 }
