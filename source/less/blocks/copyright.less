@@ -7,16 +7,13 @@
 .copyright__link {
   text-decoration: none;
   color: #666666;
-  font-family: @fontSecondary;
+  font-family: @fontSecondary, "Arial", "Helvetica", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
 }
 
-// .copyright:hover {
-
-// }
 .copyright__link:hover {
   color: #68b738;
 }
@@ -24,6 +21,15 @@
 .copyright__link:hover + .copyright__logo {
   color: #68b738;
 }
+
+.copyright__link:active {
+  color: #69b7384d;
+}
+
+.copyright__link:active + .copyright__logo {
+  color: #69b7384d;
+}
+
 
 .copyright__logo:hover {
   color: #68b738;
@@ -33,23 +39,17 @@
 .copyright__logo {
   color: #666666;
   padding-top: 3px;
- }
+}
 
 @media (min-width: @tablet-width) {
   .copyright__link {
     margin-right: 23px;
 
     color: #444444;
-    font-family: @fontSecondary;
+    font-family: @fontSecondary, "Arial", "Helvetica", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
   }
-
-}
-
-@media (min-width: @desktop-width) {
-
-
 }
