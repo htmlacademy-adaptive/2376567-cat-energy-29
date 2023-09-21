@@ -3,26 +3,31 @@
   grid-template-areas:
     "image title"
     "image description";
-  row-gap: 14px;
+  row-gap: 0;
+  grid-template-columns: 140px 140px;
+  grid-template-rows: 55px 48px;
+  align-items: center;
 }
 
 .product-preview__title {
   .clear-title();
   justify-self: start;
   width: 76px;
-  // height: 41px;
+  line-height: 14px;
+  margin-bottom: 12px;
 }
 
 .product-preview__link {
   grid-area: title;
   color: #222222;
-  font-family: @fontRegular;
+  font-family: @fontRegular, "Arial", "Helvetica", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
+  vertical-align: text-top;
 }
 
 .product-preview__img {
@@ -31,11 +36,12 @@
   height: auto;
   align-self: center;
   justify-self: center;
+  margin-left: 1px;
 }
 
 .product-preview__picture {
   grid-area: image;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .product-preview__params {
@@ -52,11 +58,9 @@
 }
 
 .product-preview__param-name {
-  // padding: 0;
-  // margin: 0;
   color: #444444;
   text-align: center;
-  font-family: @fontSecondary;
+  font-family: @fontSecondary, "Arial", "Helvetica", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -66,7 +70,7 @@
 .product-preview__param-value {
   color: #444444;
   text-align: center;
-  font-family: @fontSecondary;
+  font-family: @fontSecondary, "Arial", "Helvetica", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -84,7 +88,7 @@
 
   .product-preview__title {
     align-self: center;
-    width: 120px;
+    min-width: 125px;
   }
 
   .product-preview__link {
@@ -93,12 +97,13 @@
     text-align: center;
 
     color: #222222;
-    font-family: @fontRegular;
+    font-family: @fontRegular, "Arial", "Helvetica", sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
     text-transform: uppercase;
+    margin-bottom: 8px;
   }
 
   .product-preview__picture {
@@ -107,19 +112,19 @@
     padding: 0;
     min-height: 213px;
     display: flex;
-    align-items: end;
+    align-items: center;
+    margin-bottom: 19px;
   }
 
   .product-preview__param {
     border-bottom: 1px solid #cdcdcd;
-    padding-bottom: 6px;
     margin-bottom: 10px;
   }
 
   .product-preview__param-name {
     color: #444444;
     text-align: center;
-    font-family: @fontSecondary;
+    font-family: @fontSecondary, "Arial", "Helvetica", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -129,22 +134,11 @@
   .product-preview__param-value {
     color: #444444;
     text-align: center;
-    font-family: @fontSecondary;
+    font-family: @fontSecondary, "Arial", "Helvetica", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
-  }
-
-  .product-preview__button {
-    color: #ffffff;
-    text-align: center;
-    font-family: @fontRegular;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    text-transform: uppercase;
   }
 
   .product-preview__params {
@@ -156,20 +150,45 @@
   .product-preview__img {
     width: auto;
     height: auto;
-    margin-bottom: 31px;
+  }
+
+  .product-preview__title {
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    min-width: 125px;
+    margin-bottom: 25px;
   }
 
   .product-preview__link {
-   margin-bottom: 24px;
+    margin-bottom: 0;
   }
 
+  .product-preview__picture {
+    order: -5;
+    margin: 0;
+    padding: 0;
+    min-height: 213px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+    align-self: center;
+  }
+
+  .product-preview__param-value {
+    color: #444444;
+    text-align: center;
+    font-family: @fontSecondary, "Arial", "Helvetica", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    padding-bottom: 3px;
+  }
+
+  .product-preview__param {
+    border-bottom: 1px solid #cdcdcd;
+    margin-bottom: 3px;
+    padding-bottom: 3px;
+  }
 }
-
-// .product-preview__button {
-
-// }
-
-// .product-preview__button {
-
-// }
-

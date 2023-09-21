@@ -8,16 +8,8 @@
 
 .main-container__offer {
   padding-top: 27px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
-
-// .main-container__instructions {
-
-// }
-
-// .main-container__title {
-
-// }
 
 @media (min-width: @tablet-width) {
   .main-container__catalogs {
@@ -27,12 +19,17 @@
   .main-container__instructions {
     border-bottom: 1px solid #e6e6e6;
   }
+
+  .main-container__offer {
+    margin-bottom: unset;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .main-container__offer {
     width: 1440px;
     margin: 0 auto;
+    margin-bottom: 116px;
   }
 
   .main-container__instructions {
@@ -40,6 +37,10 @@
   }
 
   .main-container__example {
-    background: linear-gradient(to bottom, #ffffff 155px, #f2f2f2 90px);
+    background: linear-gradient(to bottom, #ffffff 180px, #f2f2f2 90px);
+  }
+
+  .main-container__catalogs {
+    margin-bottom: 73px;
   }
 }

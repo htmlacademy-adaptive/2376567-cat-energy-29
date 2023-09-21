@@ -7,7 +7,7 @@
   margin-bottom: 40px;
   color: #000000;
   text-align: left;
-  font-family: @fontRegular;
+  font-family: @fontRegular, "Arial", "Helvetica", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
@@ -34,7 +34,7 @@
 }
 
 .instructions__description {
-  font-family: @fontSecondary;
+  font-family: @fontSecondary, "Arial", "Helvetica", sans-serif;
   color: #444444;
   font-size: 14px;
   font-style: normal;
@@ -42,14 +42,17 @@
   line-height: 18px;
   margin: 0;
   padding: 0;
-  // min-width: 200px;
 }
 
 @media (min-width: @tablet-width) {
+  .instructions {
+    padding-bottom: 40px;
+  }
+
   .instructions__title {
     color: #000000;
     text-align: left;
-    font-family: @fontRegular;
+    font-family: @fontRegular, "Arial", "Helvetica", sans-serif;
     font-size: 60px;
     font-style: normal;
     font-weight: 400;
@@ -59,23 +62,16 @@
   .instructions__list {
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 155px;
+    column-gap: 139px;
+    row-gap: 35px;
     justify-content: left;
-    // margin-left: -30px;
-    // margin-right: -30px;
   }
 
   .instructions__items {
     width: 243px;
     height: 280px;
-    // flex: 0 0 50%;
-    // max-width: 50%;
-    // padding-left: 30px;
-    // padding-right: 30px;
     display: block;
-    // min-height: 230px;
-    // margin-bottom: 87px;
-
+    padding-top: 31px;
   }
 
   .instructions__items::after {
@@ -86,51 +82,51 @@
     top: -224px;
     font-size: 280px;
     line-height: 1;
-    font-family: "oswald", "Arial", sans-serif;
+    font-family: @fontRegular, "Arial", sans-serif;
     color: #f2f2f2;
     z-index: -1;
-
   }
 
   .instructions__img {
     display: block;
     flex-shrink: 0;
     margin-right: 20px;
-    margin-bottom: 35px;
+    margin-bottom: 32px;
     width: 80px;
     height: 80px;
   }
 
   .instructions__description {
-    color:#444444;
-    font-family: Lato;
+    color: #444444;
+    font-family: @fontSecondary, "Arial", "Helvetica", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
   }
+
+  .instructions__transfer {
+    display: block;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .instructions {
+    padding-bottom: 18px;
+  }
+
   .instructions__list {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 0;
-    justify-content: space-between;
-    // max-width: 25%;
-    // margin-left: -40px;
-    // margin-right: -40px;
+    column-gap: 81px;
   }
 
   .instructions__items {
-    // width: 230px;
-    // height: 280px;
-    // flex: 0 0 25%;
     max-width: 25%;
-    // padding-left: 30px;
-    // padding-right: 30px;
     display: block;
-    // min-height: 230px;
-    // margin-bottom: 87px;
+  }
+
+  .instructions__transfer {
+    display: block;
   }
 }

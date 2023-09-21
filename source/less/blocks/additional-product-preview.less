@@ -1,16 +1,13 @@
-.additional-product-preview {
-  // padding-bottom: 19px;
-}
-
 .additional-product-preview__title {
   .clear-title();
-  margin-bottom: 13px;
+  margin-bottom: 8px;
+  padding-top: 6px;
 }
 
 .additional-product-preview__link {
   text-decoration: none;
   color: #222222;
-  font-family: @fontRegular;
+  font-family: @fontRegular, "Arial", "Helvetica", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -20,7 +17,7 @@
 
 .additional-product-preview__params {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .additional-product-preview__param {
@@ -31,7 +28,7 @@
 .additional-product-preview__param-capacity {
   color: #444444;
   text-align: center;
-  font-family: @fontSecondary;
+  font-family: @fontSecondary, "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -41,17 +38,21 @@
 .additional-product-preview__param-cost {
   color: #444444;
   text-align: center;
-  font-family: @fontSecondary;
+  font-family: @fontSecondary, "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 14px;
 }
 
+.additional-product-preview--last-child {
+  margin-bottom: 0;
+}
+
 @media (min-width: @tablet-width) {
   .additional-product-preview__title {
     align-self: center;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .additional-product-preview__param {
@@ -62,7 +63,7 @@
     margin: 0;
     color: #444444;
     text-align: center;
-    font-family: @fontSecondary;
+    font-family: @fontSecondary, "Arial", "Helvetica", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -70,10 +71,10 @@
   }
 
   .additional-product-preview__param-capacity {
-    margin-right: 49px;
+    margin-right: 54px;
     color: #444444;
     text-align: center;
-    font-family: @fontSecondary;
+    font-family: @fontSecondary, "Arial", "Helvetica", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -83,7 +84,7 @@
   .additional-product-preview__link {
     color: #222222;
     text-align: center;
-    font-family: @fontRegular;
+    font-family: @fontRegular, "Arial", "Helvetica", sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -91,7 +92,10 @@
     text-transform: uppercase;
   }
 
-
+  .additional-product-preview__params {
+    margin: 0;
+    margin-bottom: 6px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -99,12 +103,14 @@
     margin: 0;
     max-width: 896px;
     border-top: 1px solid #cdcdcd;
-    border-bottom: 1px solid #cdcdcd;
-    margin-bottom: -1px;
-    margin-top: -2px;
+
+    &--last-child {
+      border-bottom: 1px solid #cdcdcd;
+    }
   }
 
   .additional-product-preview__title {
+    padding-top: 0;
     margin-top: 0;
     flex: 1 0 36%;
   }
@@ -114,6 +120,7 @@
     padding: 0;
     display: flex;
     justify-content: space-between;
+    min-width: 326px;
     // margin-top: 14px;
   }
 
@@ -125,9 +132,14 @@
     font-size: 16px;
     line-height: 20px;
     padding: 10px 92px;
-    // margin-bottom: 0;
-    // margin-right: 1px;
-    // margin-top: -5px;
     width: initial;
+  }
+
+  .additional-product-preview__params {
+    margin: 0;
+  }
+
+  .additional-product-preview__param-capacity {
+    margin-right: 115px;
   }
 }

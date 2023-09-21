@@ -8,9 +8,15 @@
   margin-bottom: 37px;
 }
 
+.form-main-container__main-title {
+  margin-bottom: 38px;
+}
+
 .form-main-container__instruction {
+  margin: 0;
+  padding: 0;
   color: #000000;
-  font-family: @fontRegular;
+  font-family: @fontRegular, "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -24,7 +30,7 @@
   display: block;
   text-align: center;
   color: #000000;
-  font-family: @fontSecondary;
+  font-family: @fontSecondary, "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -33,32 +39,32 @@
 
 @media (min-width: @tablet-width) {
   .form-main-container__main-title {
-    margin-bottom: 55px;
+    margin-bottom: 54px;
   }
 
   .form-main-container__instruction {
     font-size: 20px;
     line-height: 30px;
     width: 323px;
-    margin-bottom: 66px;
+    margin-bottom: 65px;
   }
 
   .form-main-container {
-    padding-bottom: 60px;
+    padding: 62px 70px 60px 70px;
   }
-
 }
 
 @media (min-width: @desktop-width) {
-  // .form-main-container__button-wrapper {
-  //   display: flex;
-  // }
+  .form-main-container {
+    padding: 80px 110px 80px 110px;
+  }
+
   .form-main-container__main-title {
     margin-bottom: 55px;
   }
 
   .form-main-container__instruction {
-    margin-bottom: 66px;
+    margin-bottom: 64px;
+    letter-spacing: 0.05px;
   }
-
 }
