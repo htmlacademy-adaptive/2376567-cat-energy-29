@@ -120,10 +120,22 @@ const clean = () => {
 
 // Server
 
-const serverSource = (done) => {
+// const serverSource = (done) => {
+//   browser.init({
+//     server: {
+//     baseDir: "source"
+//     },
+//     cors: true,
+//     notify: false,
+//     ui: false,
+//   });
+//   done();
+// }
+
+const serverBuild = (done) => {
   browser.init({
     server: {
-    baseDir: "source"
+    baseDir: "build"
     },
     cors: true,
     notify: false,
@@ -164,23 +176,25 @@ export const build = gulp.series(
 
 // Default
 
-export default gulp.series(
-  stylesSource, serverSource, watcher, reload
-);
-
 // export default gulp.series(
-// clean,
-// copy,
-// copyImages,
-// gulp.parallel(
-// styles,
-// html,
-// scripts,
-// svg,
-// sprite,
-// createWebp
-// ),
-// gulp.series(
-// server,
-// watcher
-// ));
+//   stylesSource, serverSource, watcher, reload
+// );
+
+export default gulp.series(
+clean,
+copy,
+copyImages,
+optimizeImages,
+gulp.parallel(
+stylesBuild,
+html,
+scripts,
+svg,
+sprite,
+createWebp
+),
+gulp.series(
+serverBuild,
+watcher,
+reload
+));
